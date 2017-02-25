@@ -62,9 +62,11 @@ public class CollectableBounce : MonoBehaviour
 
 	void OnTriggerEnter2D(Collider2D collider)
 	{
-		if(collider.gameObject.name == "PlayerCharacter")
+		if(collider.gameObject.name == "Hero")
 		{
+			// give player +50 hp
 			Destroy(gameObject);
+			GameManager.instance.playerHealth += 50;
 		}
 	}
 }

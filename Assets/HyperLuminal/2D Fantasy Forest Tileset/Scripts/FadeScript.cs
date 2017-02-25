@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class FadeScript : MonoBehaviour
 {
@@ -69,7 +70,7 @@ public class FadeScript : MonoBehaviour
 			{
 				AlphaValue = 1.0f;
 				FadeType = FADETYPE.IN;
-				GameObject.Find("PlayerCharacter").GetComponent<PlayerMovement>().RespawnPlayerAtCheckpoint();
+				GameObject.Find("Hero").GetComponent<PlayerMovement>().RespawnPlayerAtCheckpoint();
 			}
 		}
 
@@ -99,8 +100,11 @@ public class FadeScript : MonoBehaviour
 	/// </summary>
 	private void ChangeLevel()
 	{
-		int levelID = Application.loadedLevel + 1;
-		if(levelID > Application.levelCount - 1){ levelID = 0; }
-		Application.LoadLevel(levelID);
+		// switch between the two demo scenes
+		if (SceneManager.GetActiveScene ().name == "Demo (Daniel)") {
+			SceneManager.LoadScene ("Demo2 (Daniel)");
+		} else {
+			SceneManager.LoadScene ("Demo (Daniel)");
+		}
 	}
 }

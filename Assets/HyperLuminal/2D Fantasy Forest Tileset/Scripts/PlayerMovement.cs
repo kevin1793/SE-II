@@ -4,6 +4,12 @@ using System.Collections;
 public class PlayerMovement : MonoBehaviour 
 {
 	#region Member Variables
+	// timer for enemy encounters
+	private float timeSinceLastBattle = 0.0f;
+	private float encounterChance = 0.15f;
+
+	private int health;
+
 	/// <summary>
 	/// Player movement speed
 	/// </summary>
@@ -36,6 +42,9 @@ public class PlayerMovement : MonoBehaviour
 		// get the local reference
 		animator = GetComponent<Animator>();
 
+		// set health
+		health = GameManager.instance.playerHealth;
+
 		// set initial position
 		lastPosition = transform.position;
 		CheckPointPosition = transform.position;
@@ -44,6 +53,23 @@ public class PlayerMovement : MonoBehaviour
 	// Update is called once per frame
 	void FixedUpdate () 
 	{
+		// update health
+		health = GameManager.instance.playerHealth;
+		if (health <= 0) {
+			isDead = true;
+		}
+
+		// enemy encounter logic
+		// if enough time has passed
+		if (timeSinceLastBattle >= 500f) {
+			// check for random encounter
+			if (Random.Range (0.0f, 1.0f) <= encounterChance) {
+				StartCoroutine(GameManager.instance.EnemyEncounter());
+				timeSinceLastBattle = 0f;
+			}
+		}
+
+
 		// check for player exiting the game
 		if(Input.GetKeyDown(KeyCode.Escape))
 		{
@@ -103,6 +129,9 @@ public class PlayerMovement : MonoBehaviour
 		// get the last known position
 		lastPosition = transform.position;
 
+		//increment time
+		timeSinceLastBattle++;
+
 		// if we are dead do not move anymore
 		if(isDead == true)
 		{
@@ -116,8 +145,7 @@ public class PlayerMovement : MonoBehaviour
 	{
 		if(collider.gameObject.tag == "DangerousTile")
 		{
-			GameObject.Find("FadePanel").GetComponent<FadeScript>().RespawnFade();
-			isDead = true;
+			GameManager.instance.playerHealth -= 100;
 		}
 		else if(collider.gameObject.tag == "LevelChanger")
 		{

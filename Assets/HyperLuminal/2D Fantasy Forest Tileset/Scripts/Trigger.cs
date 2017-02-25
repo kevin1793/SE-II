@@ -70,7 +70,7 @@ public class Trigger : MonoBehaviour
 
 	void OnTriggerEnter2D(Collider2D collider)
 	{
-		if(collider.gameObject.name == "PlayerCharacter")
+		if(collider.gameObject.name == "Hero")
 		{
 			// toggle this object
 			ToggleObject();
