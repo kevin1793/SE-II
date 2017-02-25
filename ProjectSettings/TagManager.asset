@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - LargeTile
+  - LevelChanger
   layers:
   - Default
   - TransparentFX
@@ -40,4 +42,16 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Ground
+    uniqueID: 2204822939
+    locked: 0
+  - name: Player
+    uniqueID: 4228379955
+    locked: 0
+  - name: Objects
+    uniqueID: 481678959
+    locked: 0
+  - name: Screen
+    uniqueID: 2009019951
     locked: 0

@@ -115,6 +115,7 @@ public class PlayerMovement : MonoBehaviour
 		{
 			// we aren't moving so make sure we dont animate
 			animator.speed = 0.0f;
+			animator.SetInteger ("Direction", 4);
 		}
 
 		// get the last known position

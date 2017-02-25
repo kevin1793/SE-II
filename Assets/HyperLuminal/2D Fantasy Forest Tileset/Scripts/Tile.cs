@@ -36,11 +36,30 @@ public class Tile : MonoBehaviour
 			{
 				// make all the tiles lower than the player higher than them on render layer 
 				spriteRenderer.sortingLayerName = "TreeLayer";
+				//spriteRenderer.sortingLayerName = "Objects";
 			}
 			else
 			{
 				// give this tile a normal tile set render order
 				spriteRenderer.sortingLayerName = "Tileset";
+				//spriteRenderer.sortingLayerName = "Objects";
+			}
+		}
+
+		if(this.tag == "Tile")
+		{
+			if((playerTransform.position.y - 1.28f) > this.transform.position.y)
+			{
+				// make all the tiles lower than the player higher than them on render layer 
+				spriteRenderer.sortingLayerName = "TreeLayer";
+				spriteRenderer.sortingOrder = -5;
+				//spriteRenderer.sortingLayerName = "Objects";
+			}
+			else
+			{
+				// give this tile a normal tile set render order
+				spriteRenderer.sortingLayerName = "Tileset";
+				//spriteRenderer.sortingLayerName = "Objects";
 			}
 		}
 	}

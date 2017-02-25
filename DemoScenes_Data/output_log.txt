@@ -19,19 +19,25 @@ Platform assembly: C:\Users\DHB\Desktop\UnityProjects\2D RPG\DemoScenes_Data\Man
 Loading C:\Users\DHB\Desktop\UnityProjects\2D RPG\DemoScenes_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
 Platform assembly: C:\Users\DHB\Desktop\UnityProjects\2D RPG\DemoScenes_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
 Loading C:\Users\DHB\Desktop\UnityProjects\2D RPG\DemoScenes_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.028 seconds
+- Completed reload, in  0.020 seconds
 Platform assembly: C:\Users\DHB\Desktop\UnityProjects\2D RPG\DemoScenes_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\DHB\Desktop\UnityProjects\2D RPG\DemoScenes_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 144Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 2.662902 ms
+UnloadTime: 1.382904 ms
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 1384 -> priority: 1 
+  Thread -> id: 14dc -> priority: 1 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 4.252432 ms
+UnloadTime: 2.434437 ms
 
-Unloading 107 unused Assets to reduce memory usage. Loaded Objects now: 2095.
-Total: 0.736219 ms (FindLiveObjects: 0.114843 ms CreateObjectMapping: 0.069932 ms MarkObjects: 0.481189 ms  DeleteObjects: 0.069612 ms)
+Unloading 108 unused Assets to reduce memory usage. Loaded Objects now: 2099.
+Total: 2.522973 ms (FindLiveObjects: 0.090461 ms CreateObjectMapping: 0.041702 ms MarkObjects: 0.319822 ms  DeleteObjects: 2.070346 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.255873 ms
+
+Unloading 146 unused Assets to reduce memory usage. Loaded Objects now: 2045.
+Total: 4.408868 ms (FindLiveObjects: 0.083404 ms CreateObjectMapping: 0.040418 ms MarkObjects: 0.304745 ms  DeleteObjects: 3.979979 ms)
 
