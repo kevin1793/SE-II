@@ -42,9 +42,6 @@ public class PlayerMovement : MonoBehaviour
 		// get the local reference
 		animator = GetComponent<Animator>();
 
-		// set health
-		health = GameManager.instance.playerHealth;
-
 		// set initial position
 		lastPosition = transform.position;
 		CheckPointPosition = transform.position;
@@ -53,12 +50,6 @@ public class PlayerMovement : MonoBehaviour
 	// Update is called once per frame
 	void FixedUpdate () 
 	{
-		// update health
-		health = GameManager.instance.playerHealth;
-		if (health <= 0) {
-			isDead = true;
-		}
-
 		// enemy encounter logic
 		// if enough time has passed
 		if (timeSinceLastBattle >= 500f) {

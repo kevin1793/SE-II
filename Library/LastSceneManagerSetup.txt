@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Demo (Daniel).unity
+- path: Assets/Scenes/Demo2 (Daniel).unity
   isLoaded: 1
   isActive: 1
