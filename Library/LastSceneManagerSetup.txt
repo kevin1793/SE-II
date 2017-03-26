@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Opening Scene.unity
+=======
+- path: Assets/Scenes/Demo (Daniel).unity
+>>>>>>> master
   isLoaded: 1
   isActive: 1

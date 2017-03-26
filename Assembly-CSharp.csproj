@@ -65,8 +65,11 @@
      <Compile Include="Assets\Scripts\Item.cs" />
      <Compile Include="Assets\Scripts\Loader.cs" />
      <Compile Include="Assets\Scripts\PersistentUI.cs" />
+<<<<<<< HEAD
      <Compile Include="Assets\playSound.cs" />
      <Compile Include="Assets\playSounf.cs" />
+=======
+>>>>>>> master
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

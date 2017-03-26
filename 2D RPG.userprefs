@@ -1,9 +1,14 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\HyperLuminal\2D Fantasy Forest Tileset\Scripts\PlayerMovement.cs">
     <Files>
+<<<<<<< HEAD
       <File FileName="Assets\HyperLuminal\2D Fantasy Forest Tileset\Scripts\PlayerMovement.cs" Line="128" Column="4" />
       <File FileName="Assets\HyperLuminal\2D Fantasy Forest Tileset\Scripts\Tile.cs" Line="16" Column="12" />
+=======
+      <File FileName="Assets\HyperLuminal\2D Fantasy Forest Tileset\Scripts\PlayerMovement.cs" Line="58" Column="45" />
+      <File FileName="Assets\HyperLuminal\2D Fantasy Forest Tileset\Scripts\Tile.cs" Line="1" Column="1" />
+>>>>>>> master
       <File FileName="Assets\HyperLuminal\2D Fantasy Forest Tileset\Scripts\FadeScript.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\GameManager.cs" Line="111" Column="39" />
       <File FileName="Assets\Scripts\PersistentUI.cs" Line="4" Column="3" />
