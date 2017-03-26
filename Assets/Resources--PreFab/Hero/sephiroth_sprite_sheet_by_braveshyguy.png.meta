@@ -1,0 +1,1036 @@
+fileFormatVersion: 2
+guid: 533b40686312ed54ca6d849f52e4b2e4
+timeCreated: 1488411843
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: sephiroth_sprite_sheet_by_braveshyguy_0
+    21300002: sephiroth_sprite_sheet_by_braveshyguy_1
+    21300004: sephiroth_sprite_sheet_by_braveshyguy_2
+    21300006: sephiroth_sprite_sheet_by_braveshyguy_3
+    21300008: sephiroth_sprite_sheet_by_braveshyguy_4
+    21300010: sephiroth_sprite_sheet_by_braveshyguy_5
+    21300012: sephiroth_sprite_sheet_by_braveshyguy_6
+    21300014: sephiroth_sprite_sheet_by_braveshyguy_7
+    21300016: sephiroth_sprite_sheet_by_braveshyguy_8
+    21300018: sephiroth_sprite_sheet_by_braveshyguy_9
+    21300020: sephiroth_sprite_sheet_by_braveshyguy_10
+    21300022: sephiroth_sprite_sheet_by_braveshyguy_11
+    21300024: sephiroth_sprite_sheet_by_braveshyguy_12
+    21300026: sephiroth_sprite_sheet_by_braveshyguy_13
+    21300028: sephiroth_sprite_sheet_by_braveshyguy_14
+    21300030: sephiroth_sprite_sheet_by_braveshyguy_15
+    21300032: sephiroth_sprite_sheet_by_braveshyguy_16
+    21300034: sephiroth_sprite_sheet_by_braveshyguy_17
+    21300036: sephiroth_sprite_sheet_by_braveshyguy_18
+    21300038: sephiroth_sprite_sheet_by_braveshyguy_19
+    21300040: sephiroth_sprite_sheet_by_braveshyguy_20
+    21300042: sephiroth_sprite_sheet_by_braveshyguy_21
+    21300044: sephiroth_sprite_sheet_by_braveshyguy_22
+    21300046: sephiroth_sprite_sheet_by_braveshyguy_23
+    21300048: sephiroth_sprite_sheet_by_braveshyguy_24
+    21300050: sephiroth_sprite_sheet_by_braveshyguy_25
+    21300052: sephiroth_sprite_sheet_by_braveshyguy_26
+    21300054: sephiroth_sprite_sheet_by_braveshyguy_27
+    21300056: sephiroth_sprite_sheet_by_braveshyguy_28
+    21300058: sephiroth_sprite_sheet_by_braveshyguy_29
+    21300060: sephiroth_sprite_sheet_by_braveshyguy_30
+    21300062: sephiroth_sprite_sheet_by_braveshyguy_31
+    21300064: sephiroth_sprite_sheet_by_braveshyguy_32
+    21300066: sephiroth_sprite_sheet_by_braveshyguy_33
+    21300068: sephiroth_sprite_sheet_by_braveshyguy_34
+    21300070: sephiroth_sprite_sheet_by_braveshyguy_35
+    21300072: sephiroth_sprite_sheet_by_braveshyguy_36
+    21300074: sephiroth_sprite_sheet_by_braveshyguy_37
+    21300076: sephiroth_sprite_sheet_by_braveshyguy_38
+    21300078: sephiroth_sprite_sheet_by_braveshyguy_39
+    21300080: sephiroth_sprite_sheet_by_braveshyguy_40
+    21300082: sephiroth_sprite_sheet_by_braveshyguy_41
+    21300084: sephiroth_sprite_sheet_by_braveshyguy_42
+    21300086: sephiroth_sprite_sheet_by_braveshyguy_43
+    21300088: sephiroth_sprite_sheet_by_braveshyguy_44
+    21300090: sephiroth_sprite_sheet_by_braveshyguy_45
+    21300092: sephiroth_sprite_sheet_by_braveshyguy_46
+    21300094: sephiroth_sprite_sheet_by_braveshyguy_47
+    21300096: sephiroth_sprite_sheet_by_braveshyguy_48
+    21300098: sephiroth_sprite_sheet_by_braveshyguy_49
+    21300100: sephiroth_sprite_sheet_by_braveshyguy_50
+    21300102: sephiroth_sprite_sheet_by_braveshyguy_51
+    21300104: sephiroth_sprite_sheet_by_braveshyguy_52
+    21300106: sephiroth_sprite_sheet_by_braveshyguy_53
+    21300108: sephiroth_sprite_sheet_by_braveshyguy_54
+    21300110: sephiroth_sprite_sheet_by_braveshyguy_55
+    21300112: sephiroth_sprite_sheet_by_braveshyguy_56
+    21300114: sephiroth_sprite_sheet_by_braveshyguy_57
+    21300116: sephiroth_sprite_sheet_by_braveshyguy_58
+    21300118: sephiroth_sprite_sheet_by_braveshyguy_59
+    21300120: sephiroth_sprite_sheet_by_braveshyguy_60
+    21300122: sephiroth_sprite_sheet_by_braveshyguy_61
+    21300124: sephiroth_sprite_sheet_by_braveshyguy_62
+    21300126: sephiroth_sprite_sheet_by_braveshyguy_63
+    21300128: sephiroth_sprite_sheet_by_braveshyguy_64
+    21300130: sephiroth_sprite_sheet_by_braveshyguy_65
+    21300132: sephiroth_sprite_sheet_by_braveshyguy_66
+    21300134: sephiroth_sprite_sheet_by_braveshyguy_67
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 696
+        width: 27
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_1
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 697
+        width: 28
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_2
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 697
+        width: 32
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_3
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 698
+        width: 36
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_4
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 698
+        width: 40
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_5
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 698
+        width: 43
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_6
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 698
+        width: 65
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_7
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 698
+        width: 40
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_8
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 698
+        width: 38
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_9
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 698
+        width: 96
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_10
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 707
+        width: 248
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_11
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 613
+        width: 27
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_12
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 613
+        width: 28
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_13
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 613
+        width: 35
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_14
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 613
+        width: 42
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_15
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 613
+        width: 42
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_16
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 617
+        width: 34
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_17
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 617
+        width: 47
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_18
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 617
+        width: 46
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_19
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 617
+        width: 46
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_20
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 617
+        width: 46
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_21
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 617
+        width: 35
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_22
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 530
+        width: 27
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_23
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 530
+        width: 32
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_24
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 530
+        width: 28
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_25
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 530
+        width: 31
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_26
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 530
+        width: 30
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_27
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 530
+        width: 31
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_28
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 539
+        width: 45
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_29
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 537
+        width: 60
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_30
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 539
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_31
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 536
+        width: 53
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_32
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 537
+        width: 55
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_33
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 539
+        width: 54
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_34
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 437
+        width: 92
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_35
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 437
+        width: 88
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_36
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 437
+        width: 88
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_37
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 437
+        width: 90
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_38
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 461
+        width: 59
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_39
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 462
+        width: 56
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_40
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 462
+        width: 62
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_41
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 467
+        width: 45
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_42
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 465
+        width: 52
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_43
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 466
+        width: 58
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_44
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 434
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_45
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 425
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_46
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 375
+        width: 90
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_47
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 375
+        width: 98
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_48
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 375
+        width: 96
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_49
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 375
+        width: 97
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_50
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 272
+        width: 72
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_51
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 273
+        width: 47
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_52
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 275
+        width: 75
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_53
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 273
+        width: 65
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_54
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 267
+        width: 78
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_55
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 275
+        width: 77
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_56
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 180
+        width: 80
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_57
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 182
+        width: 60
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_58
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 183
+        width: 110
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_59
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 184
+        width: 68
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_60
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 187
+        width: 97
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_61
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 183
+        width: 86
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_62
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 33
+        width: 89
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_63
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 33
+        width: 112
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_64
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 35
+        width: 62
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_65
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 38
+        width: 109
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_66
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 32
+        width: 110
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sephiroth_sprite_sheet_by_braveshyguy_67
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 7
+        width: 87
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

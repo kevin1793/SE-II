@@ -1,6 +1,7 @@
 ﻿// Author: Daniel Berg
 // Date: 2/24/2017
 // Description: Class to ensure the UI persists across all scenes
+//
 
 using System.Collections;
 using System.Collections.Generic;

@@ -57,10 +57,16 @@
      <Compile Include="Assets\HyperLuminal\2D Fantasy Forest Tileset\Scripts\Tile.cs" />
      <Compile Include="Assets\HyperLuminal\2D Fantasy Forest Tileset\Scripts\TimedAnimations.cs" />
      <Compile Include="Assets\HyperLuminal\2D Fantasy Forest Tileset\Scripts\Trigger.cs" />
+     <Compile Include="Assets\Scripts\BattleHealthbar.cs" />
+     <Compile Include="Assets\Scripts\BattleManager.cs" />
+     <Compile Include="Assets\Scripts\BattleMonster.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
+     <Compile Include="Assets\Scripts\HealthbarText.cs" />
      <Compile Include="Assets\Scripts\Item.cs" />
      <Compile Include="Assets\Scripts\Loader.cs" />
      <Compile Include="Assets\Scripts\PersistentUI.cs" />
+     <Compile Include="Assets\playSound.cs" />
+     <Compile Include="Assets\playSounf.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

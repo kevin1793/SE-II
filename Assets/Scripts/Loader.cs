@@ -1,6 +1,7 @@
 ﻿// Author: Daniel Berg
 // Date: 2/24/2017
 // Description: Loader class used to instantiate Singleton objects for the first time
+//
 
 using System.Collections;
 using System.Collections.Generic;

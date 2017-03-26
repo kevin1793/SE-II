@@ -10,6 +10,9 @@ public class PlayerMovement : MonoBehaviour
 
 	private int health;
 
+	// flag used for triggering enemy encounters
+	private bool isMoving = false;
+
 	/// <summary>
 	/// Player movement speed
 	/// </summary>
@@ -54,7 +57,7 @@ public class PlayerMovement : MonoBehaviour
 		// if enough time has passed
 		if (timeSinceLastBattle >= 500f) {
 			// check for random encounter
-			if (Random.Range (0.0f, 1.0f) <= encounterChance) {
+			if (Random.Range (0.0f, 1.0f) <= encounterChance && isMoving) {
 				StartCoroutine(GameManager.instance.EnemyEncounter());
 				timeSinceLastBattle = 0f;
 			}
@@ -74,6 +77,7 @@ public class PlayerMovement : MonoBehaviour
 		// if there is no input then stop the animation
 		if((horizontal == 0.0f)&&(vertical == 0.0f))
 		{
+			isMoving = false;
 			animator.speed = 0.0f;
 		}
 
@@ -83,12 +87,14 @@ public class PlayerMovement : MonoBehaviour
 		// horizontal movement, left or right, set animation type and speed 
 		if (horizontal > 0)
 		{
+			isMoving = true;
 			GetComponent<Rigidbody2D>().velocity = new Vector2(movementSpeed * Time.deltaTime,0);
 			animator.SetInteger("Direction", 1);
 			animator.speed = .7f;
 		}
 		else if (horizontal < 0)
 		{
+			isMoving = true;
 			GetComponent<Rigidbody2D>().velocity =    new Vector2(-movementSpeed * Time.deltaTime, 0);
 			animator.SetInteger("Direction", 3);
 			animator.speed = .7f;
@@ -97,6 +103,7 @@ public class PlayerMovement : MonoBehaviour
 		// vertical movement, up or down, set animation type and speed 
 		if (vertical > 0)
 		{
+			isMoving = true;
 			//transform.Translate(0, movementSpeed * 0.9f * Time.deltaTime, 0);
 			GetComponent<Rigidbody2D>().velocity =    new Vector2(0, movementSpeed * Time.deltaTime);
 			animator.SetInteger("Direction", 0);
@@ -104,6 +111,7 @@ public class PlayerMovement : MonoBehaviour
 		}
 		else if (vertical < 0)
 		{
+			isMoving = true;
 			//transform.Translate(0, -movementSpeed *  0.9f * Time.deltaTime, 0);
 			GetComponent<Rigidbody2D>().velocity =    new Vector2(0, -movementSpeed * Time.deltaTime);
 			animator.SetInteger("Direction", 2);
@@ -113,6 +121,7 @@ public class PlayerMovement : MonoBehaviour
 		//compare this position to the last known one, are we moving?
 		if(this.transform.position == lastPosition)
 		{
+			isMoving = false;
 			// we aren't moving so make sure we dont animate
 			animator.speed = 0.0f;
 			animator.SetInteger ("Direction", 4);
