@@ -101,10 +101,12 @@ public class FadeScript : MonoBehaviour
 	private void ChangeLevel()
 	{
 		// switch between the two demo scenes
-		if (SceneManager.GetActiveScene ().name == "Demo (Daniel)") {
-			SceneManager.LoadScene ("Demo2 (Daniel)");
+		if (SceneManager.GetActiveScene ().name == "Opening Scene") {
+			GameManager.instance.flagPosUpdate (new Vector3(1.5f, 2.95f, 0));
+			SceneManager.LoadScene ("Opening Scene 2");
 		} else {
-			SceneManager.LoadScene ("Demo (Daniel)");
+			GameManager.instance.flagPosUpdate (new Vector3 (21f, 11f, 0));
+			SceneManager.LoadScene ("Opening Scene");
 		}
 	}
 }

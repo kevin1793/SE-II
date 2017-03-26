@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour {
 	private Scene sourceScene;
 	private string sourceName;
 
-	// current loc (used to load back to the correct location from battle scenes)
+	// current loc (used to load back to the correct location from other scenes)
 	private Vector3 currentPos;
 	private bool playerNeedsUpdate = false;
 
@@ -111,6 +111,12 @@ public class GameManager : MonoBehaviour {
 		playerHP.gameObject.SetActive(true);
 
 		// flag gamemanager to update player pos
+		playerNeedsUpdate = true;
+	}
+
+	// public function to flag a position update to given position
+	public void flagPosUpdate(Vector3 tPos) {
+		currentPos = tPos;
 		playerNeedsUpdate = true;
 	}
 }

@@ -1167,6 +1167,48 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!1001 &46942370
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4591181294717474, guid: 1ec6006604520da489999d407a4179f4, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4591181294717474, guid: 1ec6006604520da489999d407a4179f4, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4591181294717474, guid: 1ec6006604520da489999d407a4179f4, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4591181294717474, guid: 1ec6006604520da489999d407a4179f4, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4591181294717474, guid: 1ec6006604520da489999d407a4179f4, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4591181294717474, guid: 1ec6006604520da489999d407a4179f4, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4591181294717474, guid: 1ec6006604520da489999d407a4179f4, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4591181294717474, guid: 1ec6006604520da489999d407a4179f4, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 1ec6006604520da489999d407a4179f4, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &57989915
 GameObject:
   m_ObjectHideFlags: 0
@@ -13537,9 +13579,10 @@ GameObject:
   m_Component:
   - component: {fileID: 519512113}
   - component: {fileID: 519512114}
+  - component: {fileID: 519512115}
   m_Layer: 0
   m_Name: road_middle_hor (18)
-  m_TagString: Untagged
+  m_TagString: LevelChanger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13592,6 +13635,20 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!61 &519512115
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 519512112}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0.64, y: 0.64}
+  serializedVersion: 2
+  m_Size: {x: 1.28, y: 1.28}
 --- !u!1 &522201975
 GameObject:
   m_ObjectHideFlags: 0
@@ -22511,7 +22568,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &834965513
 GameObject:
@@ -30049,6 +30106,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1140456007}
   - component: {fileID: 1140456008}
+  - component: {fileID: 1140456009}
   m_Layer: 0
   m_Name: road_middle_hor (19)
   m_TagString: LevelChanger
@@ -30104,6 +30162,20 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!61 &1140456009
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1140456006}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0.64, y: 0.64}
+  serializedVersion: 2
+  m_Size: {x: 1.28, y: 1.28}
 --- !u!1 &1144513238
 GameObject:
   m_ObjectHideFlags: 0
@@ -31519,9 +31591,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1217487369}
   - component: {fileID: 1217487370}
+  - component: {fileID: 1217487371}
   m_Layer: 0
   m_Name: road_middle_hor (21)
-  m_TagString: Untagged
+  m_TagString: LevelChanger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31574,6 +31647,20 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!61 &1217487371
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1217487368}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0.64, y: 0.64}
+  serializedVersion: 2
+  m_Size: {x: 1.28, y: 1.28}
 --- !u!1 &1221157923
 GameObject:
   m_ObjectHideFlags: 0
@@ -37353,7 +37440,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1408038742
 GameObject:
@@ -43136,9 +43223,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1618686817}
   - component: {fileID: 1618686818}
+  - component: {fileID: 1618686819}
   m_Layer: 0
   m_Name: road_middle_hor (17)
-  m_TagString: Untagged
+  m_TagString: LevelChanger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43191,6 +43279,20 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!61 &1618686819
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1618686816}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0.64, y: 0.64}
+  serializedVersion: 2
+  m_Size: {x: 1.28, y: 1.28}
 --- !u!1 &1619132215
 GameObject:
   m_ObjectHideFlags: 0
@@ -44450,6 +44552,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1644280394}
   - component: {fileID: 1644280395}
+  - component: {fileID: 1644280396}
   m_Layer: 0
   m_Name: road_middle_hor (16)
   m_TagString: Untagged
@@ -44505,6 +44608,20 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!61 &1644280396
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1644280393}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0.64, y: 0.64}
+  serializedVersion: 2
+  m_Size: {x: 1.28, y: 1.28}
 --- !u!1 &1645858123
 GameObject:
   m_ObjectHideFlags: 0
@@ -56412,6 +56529,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2143716241}
   - component: {fileID: 2143716242}
+  - component: {fileID: 2143716243}
   m_Layer: 0
   m_Name: road_middle_hor (20)
   m_TagString: LevelChanger
@@ -56467,6 +56585,20 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!61 &2143716243
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2143716240}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0.64, y: 0.64}
+  serializedVersion: 2
+  m_Size: {x: 1.28, y: 1.28}
 --- !u!1 &2144405115
 GameObject:
   m_ObjectHideFlags: 0
