@@ -88,7 +88,7 @@ public class BattleManager : MonoBehaviour {
 		playerHealth = Instantiate (healthbar) as Slider;
 		playerHealth.transform.SetParent (BattleHUD.transform, false);
 		// set the healthbar value to player's current health
-		playerHealth.maxValue = GameManager.instance.playerHealth;
+		playerHealth.maxValue = 200;
 		playerHealth.value = GameManager.instance.playerHealth;
 
 		// set player healthbar position
@@ -109,8 +109,10 @@ public class BattleManager : MonoBehaviour {
 			} else {
 				monsterAttack ();
 			}
-		} else if (isDead || enemiesRemaining == 0) {
+		} else if (enemiesRemaining == 0) {
 			GameManager.instance.endBattle ();
+		} else if (isDead) {
+			GameManager.instance.resetGame ();
 		}
 	}
 

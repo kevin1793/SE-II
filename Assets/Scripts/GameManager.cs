@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour {
 	private Button enemyEncounter;
 
 	public bool inBattle = false;
+	public bool allowMovement = true;
 
 	// current scene (used to load back to the correct scene from battle scenes)
 	private Scene sourceScene;
@@ -83,6 +84,7 @@ public class GameManager : MonoBehaviour {
 	}
 
 	public IEnumerator EnemyEncounter () {
+		allowMovement = false;
 		// flash enemy encounter UI element
 		enemyEncounter.gameObject.SetActive(true);
 		yield return new WaitForSeconds (1.5f);
@@ -112,6 +114,22 @@ public class GameManager : MonoBehaviour {
 
 		// flag gamemanager to update player pos
 		playerNeedsUpdate = true;
+
+		allowMovement = true;
+	}
+
+	// function to reset the game on player death
+	public void resetGame() {
+		inBattle = false;
+
+		// switch to the main menu scene
+		SceneManager.LoadScene ("MainMenu");
+
+		// reset the player health, UI, and location
+		playerHP.gameObject.SetActive (true);
+		playerHealth = 200;
+		currentPos = new Vector3 (3.71f, 3.03f, 0);
+		allowMovement = true;
 	}
 
 	// public function to flag a position update to given position

@@ -70,9 +70,14 @@ public class PlayerMovement : MonoBehaviour
 			Application.Quit();
 		}
 
-		// get the input this frame
-		float vertical = Input.GetAxis("Vertical");
-		float horizontal = Input.GetAxis("Horizontal");
+		float vertical = 0.0f;
+		float horizontal = 0.0f;
+
+		// get the input this frame if we can move
+		if (GameManager.instance.allowMovement) {
+			vertical = Input.GetAxis ("Vertical");
+			horizontal = Input.GetAxis ("Horizontal");
+		}
 
 		// if there is no input then stop the animation
 		if((horizontal == 0.0f)&&(vertical == 0.0f))
