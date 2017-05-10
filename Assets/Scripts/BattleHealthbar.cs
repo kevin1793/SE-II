@@ -8,7 +8,7 @@ public class BattleHealthbar : MonoBehaviour {
 	// associated healthbar
 	Slider healthBar;
 	// associated monster/npc id
-	int id;
+	private int id;
 
 	// Use this for initialization
 	void Start () {
@@ -18,5 +18,14 @@ public class BattleHealthbar : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
+	}
+
+	// setter and getter functions
+	public void setId(int i) {
+		id = i;
+	}
+
+	public int getId() {
+		return id;
 	}
 }

@@ -1,0 +1,4 @@
+<press Spacebar to continue>
+Hi, I'm an NPC and this is my test dialogue.
+Welcome to this town blah blah blah
+See you later.

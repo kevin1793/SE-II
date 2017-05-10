@@ -12,16 +12,15 @@ public class BattleMonster : MonoBehaviour {
 	// vars
 	// monster health
 	public int monsterHealth;
+	// how much base damage this monster does
+	public int monsterStrength;
 	// id corresponds to an associated healthbar id
 	public int monsterID;
-
-	private Vector3 location;
+	// animator
 	private Animator monstAnim;
 
 	// Use this for initialization
 	void Start () {
-		// set location to return to when attacking
-		location = gameObject.transform.position;
 		monstAnim = gameObject.GetComponent<Animator> ();
 	}
 	

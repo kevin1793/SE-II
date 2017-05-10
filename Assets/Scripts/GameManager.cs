@@ -12,6 +12,13 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 
+	// vars for scene switching
+	public string targetScene;
+	public Vector3 targetPos;
+
+	// dialogue
+	private TextBoxManager dialogueManager;
+
 	// player values
 	public int playerHealth;
 	public Item[] playerInventory;
@@ -21,20 +28,25 @@ public class GameManager : MonoBehaviour {
 	// UI goes here
 	private Text playerHP;
 	private Button enemyEncounter;
+	public GameObject dBox;
 
+	// flags
 	public bool inBattle = false;
 	public bool allowMovement = true;
+	public bool inConversation = false;
 
 	// current scene (used to load back to the correct scene from battle scenes)
 	private Scene sourceScene;
 	private string sourceName;
 
 	// current loc (used to load back to the correct location from other scenes)
-	private Vector3 currentPos;
+	public Vector3 currentPos;
 	private bool playerNeedsUpdate = false;
+
 
 	// Use this for initialization
 	void Awake () {
+
 		// if no GameManager exists, set this as the GameManager
 		if (instance == null) {
 			instance = this;
@@ -44,12 +56,15 @@ public class GameManager : MonoBehaviour {
 			Destroy (gameObject);
 		}
 
-		// set player hp gui object
+		// set gui and dialogue
 		playerHP = PersistentUI.instance.GetComponentInChildren<Text> ();
 		enemyEncounter = PersistentUI.instance.GetComponentInChildren<Button> ();
+		dBox = GameObject.Find ("dialogueBox");
+		dialogueManager = FindObjectOfType<TextBoxManager> ();
 
 		enemyEncounter.gameObject.SetActive (false);
 
+		// toggle health ui on/off if in a battle
 		if (inBattle) {
 			playerHP.gameObject.SetActive (false);
 		} else {
@@ -66,6 +81,7 @@ public class GameManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
 		// update player hp (to be replaced with a function call later)
 		playerHP.text = "Health: " + playerHealth;
 
@@ -74,15 +90,38 @@ public class GameManager : MonoBehaviour {
 			playerHP.gameObject.SetActive(false);
 		}
 
+		// if dialogue manager isn't set, try to set it
+		if (dialogueManager == null) {
+			dialogueManager = FindObjectOfType<TextBoxManager> ();
+		}
+
+		// if dbox wasn't set, set it
+		if (dBox == null) {
+			dBox = GameObject.Find ("dialogueBox");
+		}
+
+		// if not talking, set dBox to inactive
+		if (!inConversation) {
+			dBox.gameObject.SetActive (false);
+		}
+
 		// update player pos if needed
 		if (playerNeedsUpdate) {
-			// update player pos
 			GameObject player = GameObject.Find ("Hero");
-			player.transform.position = currentPos;
-			playerNeedsUpdate = false;
+			// if we can find the player, update
+			if (player != null) {
+				// update player pos
+				player.transform.position = currentPos;
+				// if we successfully updated
+				if (GameObject.Find ("Hero").transform.position == currentPos) {
+					playerNeedsUpdate = false;
+				}
+			}
+			// else try again next frame
 		}
 	}
 
+	// function for encountering an enemy
 	public IEnumerator EnemyEncounter () {
 		allowMovement = false;
 		// flash enemy encounter UI element
@@ -98,7 +137,15 @@ public class GameManager : MonoBehaviour {
 		currentPos = GameObject.Find("Hero").transform.position;
 
 		// move to battle scene
-		SceneManager.LoadScene("Battle Scene (Daniel)");
+		SceneManager.LoadScene("Battle Scene");
+	}
+
+	// function to enter a conversation
+	public void enterConversation(GameObject t) {
+		//inConversation = true;
+		dBox.gameObject.SetActive (true);
+		inConversation = true;
+		dialogueManager.setDialogue (t.GetComponent<DialogueText> ().dialogue);
 	}
 
 	// function used to move the player from a battle scene back to original scene
