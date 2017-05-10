@@ -1,0 +1,686 @@
+fileFormatVersion: 2
+guid: e8690c112491680448d83d201360c968
+timeCreated: 1493274758
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Desert_Cave_0
+    21300002: Desert_Cave_1
+    21300004: Desert_Cave_2
+    21300006: Desert_Cave_3
+    21300008: Desert_Cave_4
+    21300010: Desert_Cave_5
+    21300012: Desert_Cave_6
+    21300014: Desert_Cave_7
+    21300016: Desert_Cave_8
+    21300018: Desert_Cave_9
+    21300020: Desert_Cave_10
+    21300022: Desert_Cave_11
+    21300024: Desert_Cave_12
+    21300026: Desert_Cave_13
+    21300028: Desert_Cave_14
+    21300030: Desert_Cave_15
+    21300032: Desert_Cave_16
+    21300034: Desert_Cave_17
+    21300036: Desert_Cave_18
+    21300038: Desert_Cave_19
+    21300040: Desert_Cave_20
+    21300042: Desert_Cave_21
+    21300044: Desert_Cave_22
+    21300046: Desert_Cave_23
+    21300048: Desert_Cave_24
+    21300050: Desert_Cave_25
+    21300052: Desert_Cave_26
+    21300054: Desert_Cave_27
+    21300056: Desert_Cave_28
+    21300058: Desert_Cave_29
+    21300060: Desert_Cave_30
+    21300062: Desert_Cave_31
+    21300064: Desert_Cave_32
+    21300066: Desert_Cave_33
+    21300068: Desert_Cave_34
+    21300070: Desert_Cave_35
+    21300072: Desert_Cave_36
+    21300074: Desert_Cave_37
+    21300076: Desert_Cave_38
+    21300078: Desert_Cave_39
+    21300080: Desert_Cave_40
+    21300082: Desert_Cave_41
+    21300084: Desert_Cave_42
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Desert_Cave_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 377
+        width: 137
+        height: 229
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Desert_Cave_1
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 492
+        width: 63
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Desert_Cave_2
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 492
+        width: 193
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Desert_Cave_3
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 300
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Desert_Cave_4
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 525
+        width: 129
+        height: 223
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Desert_Cave_5
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 941
+        width: 127
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Desert_Cave_6
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 236
+        width: 65
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Desert_Cave_7
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 236
+        width: 60
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Desert_Cave_8
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 236
+        width: 133
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Desert_Cave_9
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 428
+        width: 130
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Desert_Cave_10
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 491
+        width: 64
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Desert_Cave_11
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 652
+        width: 64
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Desert_Cave_12
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 668
+        width: 128
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Desert_Cave_13
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 651
+        width: 64
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Desert_Cave_14
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 620
+        width: 49
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Desert_Cave_15
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 620
+        width: 53
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Desert_Cave_16
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 684
+        width: 97
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Desert_Cave_17
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 686
+        width: 30
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Desert_Cave_18
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 686
+        width: 31
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Desert_Cave_19
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 715
+        width: 64
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Desert_Cave_20
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 811
+        width: 66
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Desert_Cave_21
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 936
+        width: 98
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Desert_Cave_22
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 812
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Desert_Cave_23
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 715
+        width: 66
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Desert_Cave_24
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 427
+        width: 94
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Desert_Cave_25
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 846
+        width: 30
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Desert_Cave_26
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 846
+        width: 51
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Desert_Cave_27
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 844
+        width: 38
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Desert_Cave_28
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 845
+        width: 28
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Desert_Cave_29
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 845
+        width: 33
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Desert_Cave_30
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 846
+        width: 31
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Desert_Cave_31
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 780
+        width: 31
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Desert_Cave_32
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 780
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Desert_Cave_33
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 747
+        width: 38
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Desert_Cave_34
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 236
+        width: 73
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Desert_Cave_35
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 301
+        width: 130
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Desert_Cave_36
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 492
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Desert_Cave_37
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 556
+        width: 65
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Desert_Cave_38
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 428
+        width: 98
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Desert_Cave_39
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 333
+        width: 28
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Desert_Cave_40
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 334
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Desert_Cave_41
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 332
+        width: 28
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Desert_Cave_42
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 172
+        width: 60
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

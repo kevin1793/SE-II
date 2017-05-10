@@ -11,6 +11,7 @@ using UnityEngine.UI;
 public class HealthbarText : MonoBehaviour {
 
 	public Text healthText;
+	private int id;
 
 	// Use this for initialization
 	void Start () {
@@ -20,5 +21,14 @@ public class HealthbarText : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		healthText.text = "Health: " + gameObject.GetComponent<Slider> ().value;
+	}
+
+	// setter and getter functions
+	public void setId(int i) {
+		id = i;
+	}
+
+	public int getId() {
+		return id;
 	}
 }

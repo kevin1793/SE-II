@@ -1,0 +1,5 @@
+﻿Hero: "This is taking forever"
+Hero: "If only there was a way to move faster"
+Hero: "My legs feel extremely light"
+Hero: "I think I can.. move faster!"                     
+											Hold LEFT SHIFT to run

@@ -1,0 +1,4 @@
+Shopkeeper: Hey there!
+Shopkeeper: Welcome to my Potion Shop!
+Shopkeeper: We only have Health Potions as of now.
+Shopkeeper: Why don't you buy some?

@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{575CFB57-3C26-B9A1-7D51-61557CF69D6D}</ProjectGuid>
+    <ProjectGuid>{E5480659-CD49-E971-8F07-5E6FB873D1AD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -19,7 +19,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_5_0;UNITY_5_5;UNITY_5;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VIDEO;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_5_0;UNITY_5_5;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VIDEO;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -46,29 +46,86 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\HyperLuminal\2D Fantasy Forest Tileset\Scripts\CameraFollow.cs" />
-     <Compile Include="Assets\HyperLuminal\2D Fantasy Forest Tileset\Scripts\CollectableBounce.cs" />
-     <Compile Include="Assets\HyperLuminal\2D Fantasy Forest Tileset\Scripts\Door.cs" />
-     <Compile Include="Assets\HyperLuminal\2D Fantasy Forest Tileset\Scripts\FadeScript.cs" />
-     <Compile Include="Assets\HyperLuminal\2D Fantasy Forest Tileset\Scripts\HeroMovement.cs" />
-     <Compile Include="Assets\HyperLuminal\2D Fantasy Forest Tileset\Scripts\MenuButtons.cs" />
-     <Compile Include="Assets\HyperLuminal\2D Fantasy Forest Tileset\Scripts\PauseMenu.cs" />
-     <Compile Include="Assets\HyperLuminal\2D Fantasy Forest Tileset\Scripts\PlayerMovement.cs" />
-     <Compile Include="Assets\HyperLuminal\2D Fantasy Forest Tileset\Scripts\SpikeTrap.cs" />
-     <Compile Include="Assets\HyperLuminal\2D Fantasy Forest Tileset\Scripts\Tile.cs" />
-     <Compile Include="Assets\HyperLuminal\2D Fantasy Forest Tileset\Scripts\TimedAnimations.cs" />
-     <Compile Include="Assets\HyperLuminal\2D Fantasy Forest Tileset\Scripts\Trigger.cs" />
+     <Compile Include="Assets\EffectExamples\Shared\Scripts\DecalDestroyer.cs" />
+     <Compile Include="Assets\EffectExamples\Shared\Scripts\GunAim.cs" />
+     <Compile Include="Assets\EffectExamples\Shared\Scripts\GunShoot.cs" />
+     <Compile Include="Assets\EffectExamples\Shared\Scripts\ParticleExamples.cs" />
+     <Compile Include="Assets\EffectExamples\Shared\Scripts\ParticleMenu.cs" />
+     <Compile Include="Assets\Lava.cs" />
      <Compile Include="Assets\Scripts\BattleHealthbar.cs" />
      <Compile Include="Assets\Scripts\BattleManager.cs" />
      <Compile Include="Assets\Scripts\BattleMonster.cs" />
+     <Compile Include="Assets\Scripts\CameraFollow.cs" />
+     <Compile Include="Assets\Scripts\CollectableBounce.cs" />
+     <Compile Include="Assets\Scripts\DialogueText.cs" />
+     <Compile Include="Assets\Scripts\Door.cs" />
+     <Compile Include="Assets\Scripts\FadeScript.cs" />
+     <Compile Include="Assets\Scripts\Fire.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\HealthbarText.cs" />
+     <Compile Include="Assets\Scripts\HeroMovement.cs" />
+     <Compile Include="Assets\Scripts\InventorySlot.cs" />
      <Compile Include="Assets\Scripts\Item.cs" />
      <Compile Include="Assets\Scripts\Loader.cs" />
      <Compile Include="Assets\Scripts\MainMenu.cs" />
+     <Compile Include="Assets\Scripts\MenuButtons.cs" />
+     <Compile Include="Assets\Scripts\ObtainableItem.cs" />
+     <Compile Include="Assets\Scripts\PartyMember.cs" />
+     <Compile Include="Assets\Scripts\PauseMenu.cs" />
      <Compile Include="Assets\Scripts\PersistentUI.cs" />
-     <Compile Include="Assets\playSound.cs" />
-     <Compile Include="Assets\playSounf.cs" />
+     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\PointerDetect.cs" />
+     <Compile Include="Assets\Scripts\Shop.cs" />
+     <Compile Include="Assets\Scripts\SpikeTrap.cs" />
+     <Compile Include="Assets\Scripts\TextBoxManager.cs" />
+     <Compile Include="Assets\Scripts\Tile.cs" />
+     <Compile Include="Assets\Scripts\TileChanger.cs" />
+     <Compile Include="Assets\Scripts\TimedAnimations.cs" />
+     <Compile Include="Assets\Scripts\Trigger.cs" />
+     <Compile Include="Assets\Scripts\VillagerMovement.cs" />
+     <Compile Include="Assets\Scripts\VillagerPacing.cs" />
+     <Compile Include="Assets\Scripts\playSound.cs" />
+     <Compile Include="Assets\Scripts\playSounf.cs" />
+     <Compile Include="Assets\transformLoader.cs" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Prologue.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\WordsofWisdomIntro.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Static Man 1.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Mysterious Swordsman.txt" />
+     <None Include="Assets\EffectExamples\Shared\Shaders\SurfaceShader_VC.shader" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Port Captain.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Static Woman 2.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Port Sailor.txt" />
+     <None Include="Assets\Editor\GitHub\CREDITS.txt" />
+     <None Include="Assets\Dialogue\TestDia.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Port Gaurd.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\swordsman2.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Static Woman.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Static Man 2.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Concerned Woman.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Static Guard 2.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Bartender.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Static Woman 1.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\DesertedTown.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\InventoryIntro.txt" />
+     <None Include="Assets\Standard Assets\Effects\Bloom\Resources\Bloom.shader" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Pacing Man 1.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Inn Woman.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Potion Lady.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Quiet woman.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\RunningIntro.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\IntroHero.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Static Priest 1.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Port Guard Guide.txt" />
+     <None Include="Assets\Standard Assets\Effects\Bloom\Resources\Bloom.cginc" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Inn Guard.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Dragonslayer Sword2.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Beach Walker.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\PauseIntro.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Static Guard 1.txt" />
+     <None Include="Assets\Standard Assets\Effects\LensAberrations\Resources\LensAberrations.shader" />
+     <None Include="Assets\Editor\GitHub\EULA.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Island Sign.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Dragonslayer Sword.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
@@ -93,6 +150,10 @@
  <Reference Include="UnityEditor.iOS.Extensions.Common">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{E9CFE9E3-D8EE-A3A0-9D96-9397A3591BE3}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

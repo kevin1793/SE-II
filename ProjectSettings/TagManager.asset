@@ -6,6 +6,10 @@ TagManager:
   tags:
   - LargeTile
   - LevelChanger
+  - NPC
+  - dialogueBox
+  - BattleMonster
+  - InventorySlot
   layers:
   - Default
   - TransparentFX
@@ -46,12 +50,21 @@ TagManager:
   - name: Ground
     uniqueID: 2204822939
     locked: 0
+  - name: AboveGround
+    uniqueID: 140963985
+    locked: 0
   - name: Objects
     uniqueID: 481678959
     locked: 0
   - name: Player
     uniqueID: 4228379955
     locked: 0
+  - name: Building
+    uniqueID: 93198537
+    locked: 0
   - name: Screen
     uniqueID: 2009019951
+    locked: 0
+  - name: Trees
+    uniqueID: 1402439171
     locked: 0
