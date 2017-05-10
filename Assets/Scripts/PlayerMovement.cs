@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
 
 	// timer for enemy encounters
 	private float timeSinceLastBattle = 0.0f;
-	private float encounterChance = 0.15f;
+	private float encounterChance = 0.005f;
 
 	private int health;
 
@@ -56,13 +56,19 @@ public class PlayerMovement : MonoBehaviour
 		// set initial position
 		lastPosition = transform.position;
 		CheckPointPosition = transform.position;
+
+		if (SceneManager.GetActiveScene ().name == "Prologue") {
+			animator.SetInteger ("isDown", 1);
+			movementSpeed = 0f;
+		}
 	}
 
 	void Update(){
-		if (Input.GetKeyDown(KeyCode.F) && isNPC == true && !GameManager.instance.inConversation)
-		{
+		if (isNPC == true && !GameManager.instance.inConversation && SceneManager.GetActiveScene ().name == "Tutorial scene") {
 			// if not in conversation, enter one
-			GameManager.instance.enterConversation(currNPC);
+			GameManager.instance.enterConversation (currNPC);
+		} else if (Input.GetKeyDown (KeyCode.F) && isNPC == true && !GameManager.instance.inConversation && !GameManager.instance.inShop && SceneManager.GetActiveScene ().name != "Tutorial scene") {
+			GameManager.instance.enterConversation (currNPC);
 		}
 	}
 
@@ -72,9 +78,9 @@ public class PlayerMovement : MonoBehaviour
 	{
 		// enemy encounter logic
 		// if enough time has passed
-		if (timeSinceLastBattle >= 500f && SceneManager.GetActiveScene().name != "First Town (Kevin)" && SceneManager.GetActiveScene().name != "Port (Uzziel)"){
+		if (timeSinceLastBattle >= 500f && SceneManager.GetActiveScene().name != "First Town (Kevin)" && SceneManager.GetActiveScene().name != "Port" && SceneManager.GetActiveScene().name != "Inn" && SceneManager.GetActiveScene().name != "Potion Shop" && SceneManager.GetActiveScene().name != "Path" && SceneManager.GetActiveScene().name != "Tutorial scene" && SceneManager.GetActiveScene().name != "RichHouse(Amar)"){
 			// check for random encounter and not in safeZone ie.) Towns
-			if (Random.Range (0.0f, 1.0f) <= encounterChance && isMoving) {
+			if (Random.Range (0.0f, 1.0f) <= encounterChance && isMoving && !GameManager.instance.inConversation) {
 				StartCoroutine(GameManager.instance.EnemyEncounter());
 				timeSinceLastBattle = 0f;
 			}
@@ -111,7 +117,7 @@ public class PlayerMovement : MonoBehaviour
 		GetComponent<Rigidbody2D>().velocity =    new Vector2(0, 0);
 
 		//check if "left shift" button is held down for run
-		if (Input.GetKey (KeyCode.LeftShift)) {
+		if (Input.GetKey (KeyCode.LeftShift) && isMoving == true) {
 			animator.SetInteger ("isRunning", 1);
 			movementSpeed = 155f;
 		} else {
@@ -197,10 +203,15 @@ public class PlayerMovement : MonoBehaviour
 			// update target variables
 			GameManager.instance.targetScene = collider.gameObject.GetComponent<TileChanger>().targetScene;
 			GameManager.instance.targetPos = collider.gameObject.GetComponent<TileChanger>().targetPos;
+			// heal the player to full if he enters the inn and trigger flag
+			if (GameManager.instance.targetScene == "Inn") {
+				GameManager.instance.setPlayerHP(GameManager.instance.playerMaxHP);
+				if (GameManager.instance.hasVisitedInn == false) {
+					GameManager.instance.hasVisitedInn = true;
+				}
+			}
 			GameObject.Find("FadePanel").GetComponent<FadeScript>().FadeOut();
 			isDead = true;
-
-
 		}
 
 		if(collider.gameObject.tag == "NPC")
@@ -210,7 +221,7 @@ public class PlayerMovement : MonoBehaviour
 		}
 
 	}
-		
+
 
 	void OnTriggerExit2D(Collider2D collider)
 	{
@@ -218,6 +229,10 @@ public class PlayerMovement : MonoBehaviour
 			isNPC = false;
 			currNPC = null;
 			GameManager.instance.inConversation = false;
+			GameManager.instance.shopOnEnd = false;
+			if (GameManager.instance.inShop) {
+				GameManager.instance.closeShop ();
+			}
 		}
 	}
 

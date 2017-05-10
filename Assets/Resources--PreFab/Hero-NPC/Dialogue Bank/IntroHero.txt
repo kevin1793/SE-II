@@ -1,0 +1,11 @@
+﻿Hero: "Woah where am I?"                            Press F to continue
+Hero: "Who am I?"
+...
+Hero: "I think my name is Hhhh.. Heee... Hero!"
+Hero: "That's it!"
+Hero: "I remember nothing else.. "
+Hero: "WAIT!"
+Hero: "I was fighting something.. "
+Hero: "Hey! This forest looks amazing let's explore!"
+Hero: "I will follow this path!"
+                                             Use the Arrow Keys to move around

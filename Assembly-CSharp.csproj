@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{575CFB57-3C26-B9A1-7D51-61557CF69D6D}</ProjectGuid>
+    <ProjectGuid>{E5480659-CD49-E971-8F07-5E6FB873D1AD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -46,6 +46,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\EffectExamples\Shared\Scripts\DecalDestroyer.cs" />
+     <Compile Include="Assets\EffectExamples\Shared\Scripts\GunAim.cs" />
+     <Compile Include="Assets\EffectExamples\Shared\Scripts\GunShoot.cs" />
+     <Compile Include="Assets\EffectExamples\Shared\Scripts\ParticleExamples.cs" />
+     <Compile Include="Assets\EffectExamples\Shared\Scripts\ParticleMenu.cs" />
+     <Compile Include="Assets\Lava.cs" />
      <Compile Include="Assets\Scripts\BattleHealthbar.cs" />
      <Compile Include="Assets\Scripts\BattleManager.cs" />
      <Compile Include="Assets\Scripts\BattleMonster.cs" />
@@ -54,16 +60,22 @@
      <Compile Include="Assets\Scripts\DialogueText.cs" />
      <Compile Include="Assets\Scripts\Door.cs" />
      <Compile Include="Assets\Scripts\FadeScript.cs" />
+     <Compile Include="Assets\Scripts\Fire.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\HealthbarText.cs" />
      <Compile Include="Assets\Scripts\HeroMovement.cs" />
+     <Compile Include="Assets\Scripts\InventorySlot.cs" />
      <Compile Include="Assets\Scripts\Item.cs" />
      <Compile Include="Assets\Scripts\Loader.cs" />
      <Compile Include="Assets\Scripts\MainMenu.cs" />
      <Compile Include="Assets\Scripts\MenuButtons.cs" />
+     <Compile Include="Assets\Scripts\ObtainableItem.cs" />
+     <Compile Include="Assets\Scripts\PartyMember.cs" />
      <Compile Include="Assets\Scripts\PauseMenu.cs" />
      <Compile Include="Assets\Scripts\PersistentUI.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\PointerDetect.cs" />
+     <Compile Include="Assets\Scripts\Shop.cs" />
      <Compile Include="Assets\Scripts\SpikeTrap.cs" />
      <Compile Include="Assets\Scripts\TextBoxManager.cs" />
      <Compile Include="Assets\Scripts\Tile.cs" />
@@ -71,13 +83,49 @@
      <Compile Include="Assets\Scripts\TimedAnimations.cs" />
      <Compile Include="Assets\Scripts\Trigger.cs" />
      <Compile Include="Assets\Scripts\VillagerMovement.cs" />
+     <Compile Include="Assets\Scripts\VillagerPacing.cs" />
      <Compile Include="Assets\Scripts\playSound.cs" />
      <Compile Include="Assets\Scripts\playSounf.cs" />
-     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\NPC.txt" />
+     <Compile Include="Assets\transformLoader.cs" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Prologue.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\WordsofWisdomIntro.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Static Man 1.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Mysterious Swordsman.txt" />
+     <None Include="Assets\EffectExamples\Shared\Shaders\SurfaceShader_VC.shader" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Port Captain.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Static Woman 2.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Port Sailor.txt" />
      <None Include="Assets\Editor\GitHub\CREDITS.txt" />
      <None Include="Assets\Dialogue\TestDia.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Port Gaurd.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\swordsman2.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Static Woman.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Static Man 2.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Concerned Woman.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Static Guard 2.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Bartender.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Static Woman 1.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\DesertedTown.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\InventoryIntro.txt" />
+     <None Include="Assets\Standard Assets\Effects\Bloom\Resources\Bloom.shader" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Pacing Man 1.txt" />
      <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Inn Woman.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Potion Lady.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Quiet woman.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\RunningIntro.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\IntroHero.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Static Priest 1.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Port Guard Guide.txt" />
+     <None Include="Assets\Standard Assets\Effects\Bloom\Resources\Bloom.cginc" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Inn Guard.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Dragonslayer Sword2.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Beach Walker.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\PauseIntro.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Static Guard 1.txt" />
+     <None Include="Assets\Standard Assets\Effects\LensAberrations\Resources\LensAberrations.shader" />
      <None Include="Assets\Editor\GitHub\EULA.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Island Sign.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Dragonslayer Sword.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
@@ -102,6 +150,10 @@
  <Reference Include="UnityEditor.iOS.Extensions.Common">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{E9CFE9E3-D8EE-A3A0-9D96-9397A3591BE3}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

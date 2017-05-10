@@ -88,6 +88,13 @@ MonoBehaviour:
   monsterHealth: 200
   monsterStrength: 10
   monsterID: 0
+  dropTable:
+  - chance: 0.2
+    item: {fileID: 1744867795365646, guid: a98b7eaecb5b5ac4abbe8a9953b0bf48, type: 2}
+  - chance: 0.55
+    item: {fileID: 1994567874765086, guid: 021c40f1f5b786445be7dd0a9a83dad0, type: 2}
+  - chance: 0.9
+    item: {fileID: 1803425369937854, guid: e0cb11f346c27ba4781af1874d75db02, type: 2}
 --- !u!212 &212002859846823268
 SpriteRenderer:
   m_ObjectHideFlags: 1

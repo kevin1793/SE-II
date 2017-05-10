@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 7324a5968f1be684597e8f611e43e248
-timeCreated: 1490497564
+timeCreated: 1493449128
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -12,6 +12,9 @@ TextureImporter:
     21300010: more town houses_5
     21300012: more town houses_6
     21300014: more town houses_7
+    21300016: more town houses_8
+    21300018: more town houses_9
+    21300020: more town houses_10
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -92,9 +95,9 @@ TextureImporter:
         x: 0
         y: 184
         width: 245
-        height: 560
+        height: 337
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -102,12 +105,12 @@ TextureImporter:
       name: more town houses_1
       rect:
         serializedVersion: 2
-        x: 288
+        x: 282
         y: 429
-        width: 480
-        height: 315
+        width: 486
+        height: 169
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -120,7 +123,7 @@ TextureImporter:
         width: 48
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -133,7 +136,7 @@ TextureImporter:
         width: 43
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -142,11 +145,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 249
-        y: 12
-        width: 495
-        height: 372
+        y: 9
+        width: 496
+        height: 184
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -159,7 +162,7 @@ TextureImporter:
         width: 72
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -172,7 +175,7 @@ TextureImporter:
         width: 70
         height: 93
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -185,7 +188,46 @@ TextureImporter:
         width: 48
         height: 95
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: more town houses_8
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 598
+        width: 486
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: more town houses_9
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 192
+        width: 495
+        height: 191
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: more town houses_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 521
+        width: 245
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0

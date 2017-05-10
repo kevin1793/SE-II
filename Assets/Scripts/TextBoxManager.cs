@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TextBoxManager : MonoBehaviour {
-	
+
 	private List<string> dialogueText;
 	private int currentIndex;
 	public bool inConvo = false;
@@ -19,33 +20,43 @@ public class TextBoxManager : MonoBehaviour {
 		dialogueText = new List<string> ();
 		dText = dBox.GetComponentInChildren<Text> ();
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
+		// if user hits space to continue the dialogue
+		if (Input.GetKeyUp (KeyCode.F) && cont == true) {
+			// if you reached the end
+			if (currentIndex == dialogueText.Count-1) {
+				endDialogue ();
+				cont = false;
+				inConvo = false;
+
+				if (GameManager.instance.shopOnEnd) {
+					GameManager.instance.openShop ();
+					GameManager.instance.shopOnEnd = false;
+				}
+
+				if (GameManager.instance.getItemOnEnd) {
+					GameManager.instance.obtainItem ();
+					GameManager.instance.getItemOnEnd = false;
+				}
+
+				if (GameManager.instance.NPCJoinOnEnd) {
+					GameManager.instance.addSwordsman ();
+					GameManager.instance.NPCJoinOnEnd = false;
+				}
+			}
+			// else continue to next line of text
+			else {
+				currentIndex++;
+				updateText ();
+			}
+		}
+		// else do nothing (add scrolling here if needed)
 
 		//to not skip first piece of dialogue when 'f' is pressed initially for the dialogue box
 		if (inConvo == true && Input.GetKeyUp (KeyCode.F)) {
 			cont = true;
-		}
-
-		// if you are talking, do conversation stuff
-		if (inConvo && cont == true) {
-			// if user hits space to continue the dialogue
-			if (Input.GetKeyDown (KeyCode.F) && cont == true) {
-				
-				// if you reached the end
-				if (currentIndex == dialogueText.Count-1) {
-					endDialogue ();
-					cont = false;    // helps with not skipping on new convo
-					inConvo = false;
-				}
-				// else continue to next line of text
-				else {
-					currentIndex++;
-					updateText ();
-				}
-			}
-			// else do nothing (add scrolling here if needed)
 		}
 	}
 
@@ -53,6 +64,8 @@ public class TextBoxManager : MonoBehaviour {
 	private void endDialogue() {
 		GameManager.instance.inConversation = false;
 		dBox.gameObject.SetActive (false);
+		inConvo = false;
+		cont = false;
 	}
 
 	// call this when TextBoxManager needs to update the dialogue text
@@ -76,5 +89,6 @@ public class TextBoxManager : MonoBehaviour {
 		currentIndex = 0;
 		updateText ();
 		inConvo = true;
+		cont = false;
 	}
 }

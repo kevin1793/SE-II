@@ -16,6 +16,15 @@ public class BattleMonster : MonoBehaviour {
 	public int monsterStrength;
 	// id corresponds to an associated healthbar id
 	public int monsterID;
+	// list of items the monster can drop with chances
+	[System.Serializable]
+	public class ItemDrop
+	{
+		public float chance;
+		public GameObject item;
+	}
+	// array of drops, ordered from highest rarity to lowest rarity
+	public ItemDrop[] dropTable;
 	// animator
 	private Animator monstAnim;
 
@@ -35,5 +44,19 @@ public class BattleMonster : MonoBehaviour {
 
 	public void monstOnHit() {
 		monstAnim.SetTrigger ("onHit");
+	}
+
+	// randomly drop an item from this monster's droptable for the player
+	public void dropItem() {
+		float drop = Random.Range (0.0f, 1.0f);
+
+		// loop through ordered droptable to see what dropped
+		foreach(ItemDrop i in dropTable) {
+			if(drop <= i.chance) {
+				// add it to player's inventory and stop checking
+				GameManager.instance.addItemToInventory (i.item.GetComponent<Item>());
+				return;
+			}
+		}
 	}
 }

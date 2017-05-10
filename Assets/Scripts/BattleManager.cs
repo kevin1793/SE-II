@@ -31,12 +31,17 @@ public class BattleManager : MonoBehaviour {
 	// player animation controller
 	private Animator playerAnim;
 
+	// swordsman and swordsman animator
+	private GameObject swordsman;
+	private Animator swordsmanAnim;
+
 	// vars for battle loop
 	private bool playerTurn = true;
 	private bool isDead = false;
 	private bool isAttacking = false;
 	private bool isDefending = false;
 	private bool tDelay = false;
+	private bool monstTurnStarted = false;
 	private int enemiesRemaining = 0;
 
 	// UI
@@ -63,10 +68,19 @@ public class BattleManager : MonoBehaviour {
 		AudioSource[] BattleMusic = GameObject.Find ("Battle Music").GetComponents<AudioSource> ();
 		Music = BattleMusic [0];
 		Fanfare = BattleMusic[1];
+		Music.volume = .6f;
+		Fanfare.volume = .6f;
 
 		AudioSource[] BattleFX = GameObject.Find ("BattleFX").GetComponents<AudioSource> ();
 		swordSlice = BattleFX [0];
 		monsterAtt = BattleFX[1];
+
+		// disable the swordsman if we haven't added him
+		swordsman = GameObject.Find("Swordsman");
+		swordsmanAnim = swordsman.GetComponent<Animator> ();
+		if (!GameManager.instance.swordsmanBattle) {
+			swordsman.SetActive (false);
+		}
 
 		// set GameManager state to in-battle
 		GameManager.instance.inBattle = true;
@@ -88,7 +102,7 @@ public class BattleManager : MonoBehaviour {
 		// spawn the monster(s)
 
 		// generate random amount of enemies to spawn (1-3)
-		int randomEnemies = Random.Range(1, 4);
+		int randomEnemies = Random.Range(1, monsters.Length+1);
 
 		// loop and spawn the monsters
 		for (int x = 0; x < randomEnemies; x++) {
@@ -138,7 +152,7 @@ public class BattleManager : MonoBehaviour {
 		playerHealth = Instantiate (healthbar) as Slider;
 		playerHealth.transform.SetParent (BattleHUD.transform, false);
 		// set the healthbar value to player's current health
-		playerHealth.maxValue = 200;
+		playerHealth.maxValue = GameManager.instance.playerMaxHP;
 		playerHealth.value = GameManager.instance.playerHealth;
 
 		// set player healthbar position
@@ -161,7 +175,10 @@ public class BattleManager : MonoBehaviour {
 				defend.gameObject.SetActive (true);
 				run.gameObject.SetActive (true);
 			} else {
-				monsterAttack ();
+				if (!monstTurnStarted) {
+					monstTurnStarted = true;
+					StartCoroutine ("monsterAttack");
+				}
 			}
 		} else if (isAttacking) {
 			// if waiting for the player to select a target, check for a target
@@ -178,11 +195,29 @@ public class BattleManager : MonoBehaviour {
 
 	// button listener classes for BattleHUD
 	void AttackListener () {
-		isAttacking = true;
-		attack.gameObject.SetActive (false);
-		defend.gameObject.SetActive (false);
-		run.gameObject.SetActive (false);
-		attackText.SetActive (true);
+		// if there is more than 1 enemy, wait for player to select target
+		if (enemiesRemaining > 1) {
+			isAttacking = true;
+			attack.gameObject.SetActive (false);
+			defend.gameObject.SetActive (false);
+			run.gameObject.SetActive (false);
+			attackText.SetActive (true);
+		} 
+		// otherwise there is 1 enemy, so attack it
+		else {
+			isAttacking = true;
+			attack.gameObject.SetActive (false);
+			defend.gameObject.SetActive (false);
+			run.gameObject.SetActive (false);
+			// loop through monsters and attack the one that is active
+			for (int x = 0; x < 3; x++) {
+				if (monster [x].activeSelf) {
+					playerAnim.SetTrigger ("onAttack");
+					battleUI.SetActive (false);
+					StartCoroutine (attackDelay (x));
+				}
+			}
+		}
 	}
 
 	void DefendListener () {
@@ -196,8 +231,8 @@ public class BattleManager : MonoBehaviour {
 
 	// function for detecting a player attack
 	void checkForAttack() {
-		// on mouse down
-		if(Input.GetMouseButtonDown(0)) {
+		// on mouse down and we aren't auto-attacking 1 enemy
+		if(Input.GetMouseButtonDown(0) && enemiesRemaining > 1) {
 			// check if one of the monsters was clicked
 			RaycastHit2D hit = Physics2D.Raycast (new Vector2 (Camera.main.ScreenToWorldPoint (Input.mousePosition).x, Camera.main.ScreenToWorldPoint (Input.mousePosition).y), Vector2.zero, 0);
 
@@ -216,12 +251,16 @@ public class BattleManager : MonoBehaviour {
 	void playerDefend() {
 		isDefending = true;
 		playerAnim.SetBool ("isDefending", true);
-		StartCoroutine (turnDelay());
-		playerTurn = false;
+		if (GameManager.instance.swordsmanBattle) {
+			StartCoroutine ("swordsmanAttack");
+		} else {
+			StartCoroutine (turnDelay());
+			playerTurn = false;
+		}
 	}
 
 	// monster attack
-	void monsterAttack() {
+	IEnumerator monsterAttack() {
 		
 		// loop through all the monsters and have each attack
 		foreach (BattleMonster monst in bmonster) {
@@ -255,6 +294,7 @@ public class BattleManager : MonoBehaviour {
 
 					monst.monstAttack ();
 					playerAnim.SetTrigger ("onHit");
+					yield return new WaitForSeconds (1.25f);
 				}
 			}
 		}
@@ -262,6 +302,7 @@ public class BattleManager : MonoBehaviour {
 		playerTurn = true;
 		isDefending = false;
 		playerAnim.SetBool ("isDefending", false);
+		monstTurnStarted = false;
 	}
 
 	// add a slight delay in-between actions for animations to complete
@@ -274,23 +315,68 @@ public class BattleManager : MonoBehaviour {
 
 	IEnumerator attackDelay(int targetMonster){
 
-		if (monsterHealth[targetMonster].value >= 75) {
+		if (monsterHealth[targetMonster].value > GameManager.instance.equipWeaponDamage) {
 			yield return new WaitForSeconds (0.3f);
 			swordSlice.Play ();
 			yield return new WaitForSeconds (0.2f);
 			bmonster[targetMonster].monstOnHit ();
-			monsterHealth[targetMonster].value -= 75;
+			monsterHealth[targetMonster].value -= GameManager.instance.equipWeaponDamage;
 			yield return new WaitForSeconds (1.0f);
-		} else if (monsterHealth[targetMonster].value <= 75) {
+		} else if (monsterHealth[targetMonster].value <= GameManager.instance.equipWeaponDamage) {
 			enemiesRemaining--;
 			yield return new WaitForSeconds (0.3f); // time needed for hit Sound to be in
 			swordSlice.Play ();
 			yield return new WaitForSeconds (0.2f);
-			bmonster[targetMonster].monstOnHit ();
+			bmonster[targetMonster].monstOnHit (); // monster onhit trigger
 			monsterHealth[targetMonster].value = 0;
-			yield return new WaitForSeconds (1.0f); //for last hit to make contact
+			yield return new WaitForSeconds (1.0f); // for last hit to make contact
+			bmonster [targetMonster].dropItem (); // check for a drop
 			monsterHealth[targetMonster].gameObject.SetActive (false);
 			monster[targetMonster].SetActive (false);
+		}
+
+		if (GameManager.instance.swordsmanBattle) {
+			StartCoroutine ("swordsmanAttack");
+		} else {
+			playerTurn = false;
+			isAttacking = false;
+		}
+	}
+
+	IEnumerator swordsmanAttack() {
+		int target;
+		bool foundTarget = false;
+
+		// if there are enemies left to attack, find a random one to attack
+		if (enemiesRemaining > 0) {
+			while (!foundTarget) {
+				// pick a random monster
+				target = Random.Range (0, monster.Length);
+
+				// if it is active, attack it
+				if (monster [target]) {
+					if (monster [target].activeSelf) {
+						foundTarget = true;
+						swordsmanAnim.SetTrigger ("onAttack");
+
+						// attack
+						yield return new WaitForSeconds(0.75f);
+						swordSlice.Play ();
+						yield return new WaitForSeconds (0.3f);
+						if (monsterHealth [target].value > 100) {
+							bmonster [target].monstOnHit ();
+							monsterHealth [target].value -= 100;
+						} else {
+							enemiesRemaining--;
+							bmonster [target].monstOnHit ();
+							monsterHealth [target].value = 0;
+							bmonster [target].dropItem (); // check for a drop
+							monsterHealth [target].gameObject.SetActive (false);
+							monster [target].SetActive (false);
+						}
+					}
+				}
+			}
 		}
 
 		playerTurn = false;
@@ -298,6 +384,8 @@ public class BattleManager : MonoBehaviour {
 	}
 
 	IEnumerator endBattle() {
+		// drop 200-500 gold to player inventory
+		GameManager.instance.addGoldToInventory(Random.Range(200, 501));
 		yield return new WaitForSeconds (5f); //time for victory music
 		GameManager.instance.endBattle ();
 	}

@@ -1,0 +1,2 @@
+﻿Hero: "What is this heavy bag?"                          
+                                           Press I to open inventory

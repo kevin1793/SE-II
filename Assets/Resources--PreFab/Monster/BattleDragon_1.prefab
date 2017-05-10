@@ -88,6 +88,17 @@ MonoBehaviour:
   monsterHealth: 250
   monsterStrength: 20
   monsterID: 0
+  dropTable:
+  - chance: 0.05
+    item: {fileID: 1666991597380866, guid: 9f2a6ab5dbfa9f546913236176ddfb1a, type: 2}
+  - chance: 0.2
+    item: {fileID: 1802105248310450, guid: cb12f0bd0c956164bba4c32137cca547, type: 2}
+  - chance: 0.4
+    item: {fileID: 1299759250400562, guid: 343dcff8d518c3349aa0ca6a3a4b4ad7, type: 2}
+  - chance: 0.7
+    item: {fileID: 1994567874765086, guid: 021c40f1f5b786445be7dd0a9a83dad0, type: 2}
+  - chance: 1
+    item: {fileID: 1803425369937854, guid: e0cb11f346c27ba4781af1874d75db02, type: 2}
 --- !u!212 &212424254334312956
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -1,0 +1,3 @@
+﻿Hero: "I am suddenly very tired"
+Hero: "I need a breather"                          
+                                     Press TAB to pause

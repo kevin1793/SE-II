@@ -51,11 +51,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9d659addb1a4e843b9c306b0eed9ca3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHealth: 200
-  playerInventory:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  targetScene: 
+  targetPos: {x: 0, y: 0, z: 0}
+  playerHealth: 250
+  playerMaxHP: 250
+  selectedItem: {fileID: 0}
+  dBox: {fileID: 0}
+  inBattle: 0
+  allowMovement: 1
+  inConversation: 0
+  swordsmanBattle: 0
+  currentPos: {x: 0, y: 0, z: 0}
