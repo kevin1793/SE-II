@@ -9,6 +9,7 @@ public class ObtainableItem : MonoBehaviour {
 
 	private SpriteRenderer spriteRend;
 	private bool obtainable = true;
+	AudioSource SwordDraw;
 
 	// Use this for initialization
 	void Start () {
@@ -16,6 +17,8 @@ public class ObtainableItem : MonoBehaviour {
 		if(GameManager.instance.dsSword) {
 			deactivate();
 		}
+
+		SwordDraw = GetComponent<AudioSource> ();
 	}
 	
 	// Update is called once per frame
@@ -27,11 +30,18 @@ public class ObtainableItem : MonoBehaviour {
 		if (obtainable) {
 			deactivate ();
 			GameManager.instance.addItemToInventory (item);
+			SwordDraw.Play ();
 		}
 	}
 
 	public void deactivate() {
 		obtainable = false;
+		StartCoroutine ("Delay");
+	}
+
+	IEnumerator Delay(){
+		
+		yield return new WaitForSeconds (.2f);
 		spriteRend.sprite = null;
 	}
 }

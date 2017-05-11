@@ -1,0 +1,4 @@
+Guard: This part of town had to be evacuated due to the recent outbreak of monsters.
+Hero: Why are you here then?
+Guard: Because the pay is good.
+Hero: Makes sense

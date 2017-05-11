@@ -1,7 +1,7 @@
-﻿Hero: "Woah where am I?"                            Press F to continue
-Hero: "Who am I?"
+﻿???: "Woah where am I?"                            Press F to continue
+???: "Who am I?"
 ...
-Hero: "I think my name is Hhhh.. Heee... Hero!"
+???: "I think my name is Hhhh.. Heee... Hero!"
 Hero: "That's it!"
 Hero: "I remember nothing else.. "
 Hero: "WAIT!"

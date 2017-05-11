@@ -1,0 +1,4 @@
+﻿Hero: "This place looks extremely familiar"
+Hero: "It looks like the inside was trashed"
+Hero: "I wonder why it says Fiona on the wall"
+Hero: "This gives me the creeps"

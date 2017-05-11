@@ -1,0 +1,4 @@
+Horatio: I love the smell of the ocean, it's very relaxing.
+Hero: Would you happen to know where I can find a boat?
+Horatio: Yes you're in luck two ships just docked this morning. If you follow the path down you can find them.
+Hero: Okay thank you. 

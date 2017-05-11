@@ -1,0 +1,5 @@
+Hero: Do you have a ship, I need to get to Far East Island.
+Rusty: Of course, I can take you there. Just hop in my boat when you're ready.
+Hero: Sweet I've never ridden in such a huge ship before.
+Rusty: Oh that's not mine, mine's the smaller one.
+Hero: Oh, alright.

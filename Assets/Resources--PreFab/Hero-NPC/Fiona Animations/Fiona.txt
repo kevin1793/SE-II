@@ -1,0 +1,10 @@
+???: "Brother..."
+Hero: (Fiona?)
+Hero: (Is that you?)
+Fiona: "There isn't much time for me..."
+Fiona: "You must find your way back to the Dragon King and defeat him."
+Fiona: "Find the Dragon Slayer Sword."
+Fiona: "It is the only way..."
+Hero: (Sister...I'm sorry I couldn't save you.)
+Fiona: "I must go now."
+Fiona: "Make haste brother..."

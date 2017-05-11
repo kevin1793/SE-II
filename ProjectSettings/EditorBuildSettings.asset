@@ -47,11 +47,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Final Battle Scene.unity
   - enabled: 0
     path: Assets/Scenes/Path2.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Town.unity
   - enabled: 1
     path: Assets/Scenes/Marketplace.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Town-Resident.unity
   - enabled: 1
     path: Assets/Scenes/Cave1.unity
@@ -61,3 +61,27 @@ EditorBuildSettings:
     path: Assets/Scenes/Prologue.unity
   - enabled: 1
     path: Assets/Scenes/RichHouse(Amar).unity
+  - enabled: 1
+    path: Assets/Scenes/PoorHouse(Amar).unity
+  - enabled: 1
+    path: Assets/Scenes/Library(Amar).unity
+  - enabled: 1
+    path: Assets/Scenes/Tresmuertes.unity
+  - enabled: 0
+    path: 
+  - enabled: 1
+    path: Assets/Scenes/Prologue2.unity
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+  - enabled: 1
+    path: Assets/Scenes/Prologue3.unity
+  - enabled: 1
+    path: Assets/Scenes/Tresmuertes.unity
+  - enabled: 1
+    path: Assets/Scenes/The Six.unity
+  - enabled: 1
+    path: Assets/Scenes/PreFinalBattle.unity
+  - enabled: 1
+    path: Assets/Scenes/Deserted Battle Scene.unity
+  - enabled: 1
+    path: Assets/Scenes/Exodus.unity

@@ -1,0 +1,4 @@
+Guard: You may be wondering why there are no children in the town.
+Hero: Coming to think of think of it, I haven't seen or heard any.
+Guard: That's because they were evacuated to a safer city because of the the monsters.
+Hero: That's good thinking.

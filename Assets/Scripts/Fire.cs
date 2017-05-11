@@ -55,7 +55,7 @@ public class Fire : MonoBehaviour {
 		}
 
 		if (counter == 13 && Input.GetKeyUp(KeyCode.F)) {
-			SceneManager.LoadScene ("Tutorial scene");
+			SceneManager.LoadScene ("Prologue2");
 		}
 	}
 

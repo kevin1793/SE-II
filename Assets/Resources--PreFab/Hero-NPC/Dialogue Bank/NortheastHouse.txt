@@ -1,0 +1,2 @@
+﻿Hero: "This house seems like it used to get many people coming in."
+Hero: "I wonder if it was the last house before the wild.."

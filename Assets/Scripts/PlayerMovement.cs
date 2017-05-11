@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
 
 	// timer for enemy encounters
 	private float timeSinceLastBattle = 0.0f;
-	private float encounterChance = 0.005f;
+	private float encounterChance = 0.1f;
 
 	private int health;
 
@@ -57,18 +57,21 @@ public class PlayerMovement : MonoBehaviour
 		lastPosition = transform.position;
 		CheckPointPosition = transform.position;
 
-		if (SceneManager.GetActiveScene ().name == "Prologue") {
+		if (SceneManager.GetActiveScene ().name == "Prologue" || SceneManager.GetActiveScene ().name == "Prologue") {
 			animator.SetInteger ("isDown", 1);
 			movementSpeed = 0f;
+			animator.SetInteger ("Direction", 0);
+
 		}
 	}
 
 	void Update(){
-		if (isNPC == true && !GameManager.instance.inConversation && SceneManager.GetActiveScene ().name == "Tutorial scene") {
-			// if not in conversation, enter one
+		if (currNPC == null) {
+			isNPC = false;
+		}
+		if (Input.GetKeyDown (KeyCode.F) && isNPC == true && !GameManager.instance.inConversation && !GameManager.instance.inShop && !GameManager.instance.inTutorial) {
 			GameManager.instance.enterConversation (currNPC);
-		} else if (Input.GetKeyDown (KeyCode.F) && isNPC == true && !GameManager.instance.inConversation && !GameManager.instance.inShop && SceneManager.GetActiveScene ().name != "Tutorial scene") {
-			GameManager.instance.enterConversation (currNPC);
+			GameManager.instance.fnotify.SetActive (false);
 		}
 	}
 
@@ -76,9 +79,15 @@ public class PlayerMovement : MonoBehaviour
 	// Update is called once per frame
 	void FixedUpdate () 
 	{
+
+		if (isNPC == true && !GameManager.instance.inConversation && GameManager.instance.inTutorial && GameManager.instance.firstConvo && currNPC != null) {
+			// if not in conversation, enter one
+			GameManager.instance.enterConversation (currNPC);
+		}
+
 		// enemy encounter logic
 		// if enough time has passed
-		if (timeSinceLastBattle >= 500f && SceneManager.GetActiveScene().name != "First Town (Kevin)" && SceneManager.GetActiveScene().name != "Port" && SceneManager.GetActiveScene().name != "Inn" && SceneManager.GetActiveScene().name != "Potion Shop" && SceneManager.GetActiveScene().name != "Path" && SceneManager.GetActiveScene().name != "Tutorial scene" && SceneManager.GetActiveScene().name != "RichHouse(Amar)"){
+		if (timeSinceLastBattle >= 500f && GameManager.instance.allowBattle && !GameManager.instance.inBattle && GameManager.instance.battleToggleOverride){
 			// check for random encounter and not in safeZone ie.) Towns
 			if (Random.Range (0.0f, 1.0f) <= encounterChance && isMoving && !GameManager.instance.inConversation) {
 				StartCoroutine(GameManager.instance.EnemyEncounter());
@@ -213,26 +222,35 @@ public class PlayerMovement : MonoBehaviour
 			GameObject.Find("FadePanel").GetComponent<FadeScript>().FadeOut();
 			isDead = true;
 		}
-
+		else if(collider.gameObject.tag == "BattleTrigger") {
+			collider.gameObject.GetComponent<BattleSceneTrigger> ().battleTrigger ();
+		}
 		if(collider.gameObject.tag == "NPC")
 		{
+			if (!GameManager.instance.inTutorial && !GameManager.instance.inPrologue) {
+				GameManager.instance.fnotify.SetActive (true);
+			}
 			isNPC = true;
 			currNPC = collider.gameObject;
 		}
-
 	}
 
 
 	void OnTriggerExit2D(Collider2D collider)
 	{
+		if (collider.gameObject.tag == "NPC" && GameManager.instance.inTutorial) {
+			GameManager.instance.firstConvo = true;
+		}
+
 		if (collider.gameObject.tag == "NPC") {
 			isNPC = false;
 			currNPC = null;
+			GameManager.instance.fnotify.SetActive (false);
 			GameManager.instance.inConversation = false;
 			GameManager.instance.shopOnEnd = false;
 			if (GameManager.instance.inShop) {
 				GameManager.instance.closeShop ();
-			}
+			}	
 		}
 	}
 

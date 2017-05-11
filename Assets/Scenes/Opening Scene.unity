@@ -4171,7 +4171,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300002, guid: 4b6aca653a06b884888710b141c2f767, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -10109,7 +10109,7 @@ Transform:
   m_GameObject: {fileID: 360216209}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 10}
-  m_LocalScale: {x: 3.2458425, y: 3.2458487, z: 1}
+  m_LocalScale: {x: 8, y: 8, z: 1}
   m_Children: []
   m_Father: {fileID: 1513276080}
   m_RootOrder: 0
@@ -10145,7 +10145,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -614008535
-  m_SortingOrder: 1
+  m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: b2e93b6b3497e5143b5d1d782ceab9b7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -31190,6 +31190,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneSwitch: 0
+  AlphaValue: 0
   FadeType: 0
 --- !u!212 &1134743161
 SpriteRenderer:
@@ -31222,7 +31223,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -614008535
-  m_SortingOrder: 3
+  m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: e5580b8d5c1eaae4caab4e4661ae9810, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -37975,7 +37976,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fdb105e8f8d53f42bfe70c7c3158517, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetScene: Town
+  targetScene: Tresmuertes
   targetPos: {x: 13.2, y: 2.37, z: 0}
 --- !u!61 &1385498249
 BoxCollider2D:
@@ -47291,7 +47292,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300002, guid: 4b6aca653a06b884888710b141c2f767, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

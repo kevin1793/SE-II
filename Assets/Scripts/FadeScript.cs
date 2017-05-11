@@ -14,7 +14,7 @@ public class FadeScript : MonoBehaviour
 	/// <summary>
 	/// The alpha value of the fade
 	/// </summary>
-	private float AlphaValue;
+	public float AlphaValue;
 	
 	/// <summary>
 	/// A toggle for turning this tiles functionality on or off
@@ -81,6 +81,7 @@ public class FadeScript : MonoBehaviour
 				GameObject.Find("Hero").GetComponent<PlayerMovement>().RespawnPlayerAtCheckpoint();
 			}
 		}
+
 
 		// set the objects new colour
 		spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, AlphaValue);

@@ -1,0 +1,6 @@
+Thomas: Welcome to my house.
+Hero: Do you know anything about the Dragon King?
+Thomas: Hmm no not really just that he's the Dragon King.
+Thomas: If you want to know more you should go to the library west of here.
+Hero: Okay thanks.
+Thomas: No problem.
