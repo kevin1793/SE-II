@@ -1,0 +1,3 @@
+﻿Hero: "This inn looked liked it would have been popping before the monsters"
+Hero: "Such a shame.. I wonder who is responsible"
+Hero: "It can't be Magmadroth.. or can it?"

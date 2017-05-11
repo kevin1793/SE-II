@@ -1,0 +1,4 @@
+Old Shopkeeper: Be careful around here youngster.
+Old Shopkeeper: The marketplace has been overrun with monsters.
+Hero: Then why are you still here? 
+Old Shopkeeper: I put my life into my shop I couldn't just leave it.

@@ -7,6 +7,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class BattleManager : MonoBehaviour {
 
@@ -42,6 +43,7 @@ public class BattleManager : MonoBehaviour {
 	private bool isDefending = false;
 	private bool tDelay = false;
 	private bool monstTurnStarted = false;
+	private bool swordsmanAttacking = false;
 	private int enemiesRemaining = 0;
 
 	// UI
@@ -61,6 +63,10 @@ public class BattleManager : MonoBehaviour {
 
 	public static bool pause = false;
 	private bool battleEnding = false;
+	private bool bossFight = false;
+	private GameObject stoneBoss;
+	private Color bossColor;
+	private float speed = 0.5f;
 
 	// Use this for initialization
 	void Start () {
@@ -160,6 +166,16 @@ public class BattleManager : MonoBehaviour {
 		healthTransform.anchorMin = new Vector2 (0f, 0.5f);
 		healthTransform.anchorMax = new Vector2 (0f, 0.5f);
 		healthTransform.anchoredPosition = new Vector2 (0, -25);
+
+		stoneBoss = GameObject.Find ("BossDefeated");
+		stoneBoss.SetActive (false);
+
+		if (GameObject.Find ("BattleDragon_Boss(Clone)")) {
+			stoneBoss.transform.localScale += new Vector3 (1f, 1f, 0f);
+			stoneBoss.transform.position = spawnPoints [0];
+			stoneBoss.GetComponent<SpriteRenderer> ().flipX = true;
+			bossFight = true;
+		}
 	}
 	
 	// Update is called once per frame
@@ -183,11 +199,21 @@ public class BattleManager : MonoBehaviour {
 		} else if (isAttacking) {
 			// if waiting for the player to select a target, check for a target
 			checkForAttack ();
-		} else if (enemiesRemaining == 0 && !isAttacking && !battleEnding) {
+		} else if (enemiesRemaining == 0 && !isAttacking && !battleEnding && !swordsmanAttacking) {
+			if (playerAnim.GetBool ("isDefending")) {
+				playerAnim.SetBool ("isDefending", false);
+			}
 			battleEnding = true;
 			Music.Stop ();
-			Fanfare.Play ();
-			StartCoroutine("endBattle");
+			if (bossFight) {
+				stoneBoss.SetActive (true);
+				monster [0].GetComponent<SpriteRenderer> ().color = Color.clear;
+				monster [0].GetComponentInChildren<AudioSource> ().Play ();
+				StartCoroutine ("endBossBattle");
+			} else {
+				Fanfare.Play ();
+				StartCoroutine ("endBattle");
+			}
 		} else if (isDead) {
 			GameManager.instance.resetGame ();
 		}
@@ -261,40 +287,77 @@ public class BattleManager : MonoBehaviour {
 
 	// monster attack
 	IEnumerator monsterAttack() {
-		
-		// loop through all the monsters and have each attack
-		foreach (BattleMonster monst in bmonster) {
-			// make sure the monster exists
-			if (monst != null) {
-				// make sure it isn't a dead monster
-				if (monster [monst.monsterID].gameObject.activeSelf) {
-					monsterAtt.Play ();
 
-					if (isDefending) {
-						if (playerHealth.value >= monst.monsterStrength / 2) {
-							playerHealth.value -= monst.monsterStrength / 2;
+		if (bossFight) {
+			BattleMonster bossMonst = bmonster [0];
+			GameObject bossObj = monster [0];
+
+			bossObj.GetComponentInChildren<AudioSource> ().Play ();
+			bossObj.GetComponentInChildren<ParticleSystem> ().Play ();
+
+			yield return new WaitForSeconds (1.25f);
+			playerAnim.SetTrigger ("onHit");
+
+			if (isDefending) {
+				if (playerHealth.value >= bossMonst.monsterStrength / 2) {
+					playerHealth.value -= bossMonst.monsterStrength / 2;
+				} else {
+					playerHealth.value = 0;
+				}
+			} else {
+				if (playerHealth.value >= bossMonst.monsterStrength) {
+					playerHealth.value -= bossMonst.monsterStrength;
+				} else {
+					playerHealth.value = 0;
+				}
+			}
+
+			GameManager.instance.playerHealth = (int)playerHealth.value;
+
+			if (playerHealth.value == 0) {
+				isDead = true;
+
+			}
+
+			yield return new WaitForSeconds (1.25f);
+
+		} else {
+			// loop through all the monsters and have each attack
+			foreach (BattleMonster monst in bmonster) {
+				// make sure the monster exists
+				if (monst != null) {
+					// make sure it isn't a dead monster
+					if (monster [monst.monsterID].gameObject.activeSelf) {
+					
+						monsterAtt.Play ();
+						monst.monstAttack ();
+						playerAnim.SetTrigger ("onHit");
+
+						if (isDefending) {
+							if (playerHealth.value >= monst.monsterStrength / 2) {
+								playerHealth.value -= monst.monsterStrength / 2;
+							} else {
+								playerHealth.value = 0;
+							}
 						} else {
-							playerHealth.value = 0;
+							if (playerHealth.value >= monst.monsterStrength) {
+								playerHealth.value -= monst.monsterStrength;
+							} else {
+								playerHealth.value = 0;
+							}
 						}
-					} else {
-						if (playerHealth.value >= monst.monsterStrength) {
-							playerHealth.value -= monst.monsterStrength;
-						} else {
-							playerHealth.value = 0;
+
+						// update player health value in gamemanager
+						GameManager.instance.playerHealth = (int)playerHealth.value;
+
+						if (playerHealth.value == 0) {
+							isDead = true;
+
 						}
-					}
 
-					// update player health value in gamemanager
-					GameManager.instance.playerHealth = (int)playerHealth.value;
-
-					if (playerHealth.value == 0) {
-						isDead = true;
+						yield return new WaitForSeconds (1.25f);
 
 					}
-
-					monst.monstAttack ();
-					playerAnim.SetTrigger ("onHit");
-					yield return new WaitForSeconds (1.25f);
 				}
 			}
 		}
@@ -328,14 +391,20 @@ public class BattleManager : MonoBehaviour {
 			swordSlice.Play ();
 			yield return new WaitForSeconds (0.2f);
 			bmonster[targetMonster].monstOnHit (); // monster onhit trigger
-			monsterHealth[targetMonster].value = 0;
-			yield return new WaitForSeconds (1.0f); // for last hit to make contact
-			bmonster [targetMonster].dropItem (); // check for a drop
-			monsterHealth[targetMonster].gameObject.SetActive (false);
-			monster[targetMonster].SetActive (false);
+			if (bossFight) {
+				monsterHealth [targetMonster].value = 1;
+				yield return new WaitForSeconds (1.0f);
+			} else {
+				monsterHealth [targetMonster].value = 0;
+				yield return new WaitForSeconds (1.0f); // for last hit to make contact
+				bmonster [targetMonster].dropItem (); // check for a drop
+				monsterHealth [targetMonster].gameObject.SetActive (false);
+				monster [targetMonster].SetActive (false);
+			}
 		}
 
 		if (GameManager.instance.swordsmanBattle) {
+			swordsmanAttacking = true;
 			StartCoroutine ("swordsmanAttack");
 		} else {
 			playerTurn = false;
@@ -360,9 +429,8 @@ public class BattleManager : MonoBehaviour {
 						swordsmanAnim.SetTrigger ("onAttack");
 
 						// attack
-						yield return new WaitForSeconds(0.75f);
+						yield return new WaitForSeconds(1.0f);
 						swordSlice.Play ();
-						yield return new WaitForSeconds (0.3f);
 						if (monsterHealth [target].value > 100) {
 							bmonster [target].monstOnHit ();
 							monsterHealth [target].value -= 100;
@@ -374,6 +442,7 @@ public class BattleManager : MonoBehaviour {
 							monsterHealth [target].gameObject.SetActive (false);
 							monster [target].SetActive (false);
 						}
+						yield return new WaitForSeconds (1.4f);
 					}
 				}
 			}
@@ -381,6 +450,7 @@ public class BattleManager : MonoBehaviour {
 
 		playerTurn = false;
 		isAttacking = false;
+		swordsmanAttacking = false;
 	}
 
 	IEnumerator endBattle() {
@@ -388,5 +458,12 @@ public class BattleManager : MonoBehaviour {
 		GameManager.instance.addGoldToInventory(Random.Range(200, 501));
 		yield return new WaitForSeconds (5f); //time for victory music
 		GameManager.instance.endBattle ();
+	}
+
+	IEnumerator endBossBattle() {
+		yield return new WaitForSeconds(3.5f);
+		GameManager.instance.finalBossDefeated = true;
+
+		SceneManager.LoadScene ("Exodus");
 	}
 }

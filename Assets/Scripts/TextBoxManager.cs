@@ -57,11 +57,16 @@ public class TextBoxManager : MonoBehaviour {
 		//to not skip first piece of dialogue when 'f' is pressed initially for the dialogue box
 		if (inConvo == true && Input.GetKeyUp (KeyCode.F)) {
 			cont = true;
+		} if (inConvo == true && GameManager.instance.inTutorial) {
+			cont = true;
 		}
 	}
 
 	// call this when a conversation ends
 	private void endDialogue() {
+		if (GameManager.instance.inTutorial) {
+			GameManager.instance.disableDialogue ();
+		}
 		GameManager.instance.inConversation = false;
 		dBox.gameObject.SetActive (false);
 		inConvo = false;

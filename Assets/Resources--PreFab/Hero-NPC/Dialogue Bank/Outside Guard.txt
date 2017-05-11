@@ -1,0 +1,4 @@
+Guard: "Welcome to the Town of Valencia!"
+Guard: "The forest is dangerous."
+Guard: "Surprised you are traveling alone with all these monsters about!"
+Guard: "Please rest. You can find an Inn to rest and a Potion Shop to stock up."

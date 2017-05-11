@@ -1,7 +1,7 @@
-Gaurd: Fending off these monsters from this Town takes a lot!
-Gaurd: Hey you! Have you heard about the legendary Dragon Slayer Sword?
-Gaurd: They say that the choosen one can pull the sword from the stone.
+Guard: Fending off these monsters from this Town takes a lot!
+Guard: Hey you! Have you heard about the legendary Dragon Slayer Sword?
+Guard: They say that the choosen one can pull the sword from the stone.
 Hero: ...
-Gaurd: Ya know I ALMOST had it...
-Gaurd: It nudged a bit!
-Gaurd: Anyways...You can find it directly South of the Inn along an old path.
+Guard: Ya know I ALMOST had it...
+Guard: It nudged a bit!
+Guard: Anyways...You can find it directly South of the Inn along an old path.

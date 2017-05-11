@@ -52,42 +52,78 @@
      <Compile Include="Assets\Standard Assets\Effects\Common\Editor\FieldFinder.cs" />
      <Compile Include="Assets\Standard Assets\Effects\Common\Editor\MinDrawer.cs" />
      <Compile Include="Assets\Standard Assets\Effects\LensAberrations\Editor\LensAberrationsEditor.cs" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\LastHouseTresmuertes.txt" />
      <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Prologue.txt" />
      <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\WordsofWisdomIntro.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Patron 2.txt" />
      <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Static Man 1.txt" />
      <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Mysterious Swordsman.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Outside Guard.txt" />
      <None Include="Assets\EffectExamples\Shared\Shaders\SurfaceShader_VC.shader" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Market Guard.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Prologue3.txt" />
      <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Port Captain.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Sailor 1.txt" />
      <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Static Woman 2.txt" />
      <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Port Sailor.txt" />
      <None Include="Assets\Editor\GitHub\CREDITS.txt" />
      <None Include="Assets\Dialogue\TestDia.txt" />
      <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Port Gaurd.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\WreckedInn.txt" />
      <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\swordsman2.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Patron 3.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Librarian.txt" />
      <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Static Woman.txt" />
      <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Static Man 2.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Locked Door Dialogues\Locked Church Door.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Helper.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Moving Guard.txt" />
+     <None Include="Assets\PyroParticles\Prefab\Materials\AdditiveTintable.shader" />
      <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Concerned Woman.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Rich Man.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Exodus.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Waitress.txt" />
      <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Static Guard 2.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Fiona Animations\Fiona.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Horatio.txt" />
      <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Bartender.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Old Shopkeep.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Adventurer.txt" />
      <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Static Woman 1.txt" />
      <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\DesertedTown.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Boat Captain.txt" />
      <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\InventoryIntro.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\NortheastHouse.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Locked Door Dialogues\Locked.txt" />
      <None Include="Assets\Standard Assets\Effects\Bloom\Resources\Bloom.shader" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Sailor 2.txt" />
      <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Pacing Man 1.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Tresmuertes.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Poor Woman.txt" />
      <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Inn Woman.txt" />
      <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Potion Lady.txt" />
      <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Quiet woman.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Wanderer.txt" />
      <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\RunningIntro.txt" />
      <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\IntroHero.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Rich Woman.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\PreFinalBattle.txt" />
      <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Static Priest 1.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Annoyed Gaurd.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Destroyed House.txt" />
      <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Port Guard Guide.txt" />
      <None Include="Assets\Standard Assets\Effects\Bloom\Resources\Bloom.cginc" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Locked Door Dialogues\Barn door.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\TownBottomHouse.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Sailor 3.txt" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Patron 1.txt" />
      <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Inn Guard.txt" />
      <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Dragonslayer Sword2.txt" />
      <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Beach Walker.txt" />
      <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\PauseIntro.txt" />
      <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Static Guard 1.txt" />
      <None Include="Assets\Standard Assets\Effects\LensAberrations\Resources\LensAberrations.shader" />
+     <None Include="Assets\Resources--PreFab\Hero-NPC\Locked Door Dialogues\Windmill Door.txt" />
      <None Include="Assets\Editor\GitHub\EULA.txt" />
      <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Island Sign.txt" />
      <None Include="Assets\Resources--PreFab\Hero-NPC\Dialogue Bank\Dragonslayer Sword.txt" />
@@ -139,6 +175,45 @@
  <Reference Include="UnityEngine.VR">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
  </Reference>
+ <Reference Include="AsyncBridge.Net35">
+ <HintPath>C:/Users/DHB/Desktop/UnityProjects/SE-II/Assets/Editor/GitHub/AsyncBridge.Net35.dll</HintPath>
+ </Reference>
+ <Reference Include="GitHub.Api">
+ <HintPath>C:/Users/DHB/Desktop/UnityProjects/SE-II/Assets/Editor/GitHub/GitHub.Api.dll</HintPath>
+ </Reference>
+ <Reference Include="GitHub.Logging">
+ <HintPath>C:/Users/DHB/Desktop/UnityProjects/SE-II/Assets/Editor/GitHub/GitHub.Logging.dll</HintPath>
+ </Reference>
+ <Reference Include="GitHub.Unity">
+ <HintPath>C:/Users/DHB/Desktop/UnityProjects/SE-II/Assets/Editor/GitHub/GitHub.Unity.dll</HintPath>
+ </Reference>
+ <Reference Include="ICSharpCode.SharpZipLib">
+ <HintPath>C:/Users/DHB/Desktop/UnityProjects/SE-II/Assets/Editor/GitHub/ICSharpCode.SharpZipLib.dll</HintPath>
+ </Reference>
+ <Reference Include="Mono.Security">
+ <HintPath>C:/Users/DHB/Desktop/UnityProjects/SE-II/Assets/Editor/GitHub/Mono.Security.dll</HintPath>
+ </Reference>
+ <Reference Include="Octokit-Extensions35">
+ <HintPath>C:/Users/DHB/Desktop/UnityProjects/SE-II/Assets/Editor/GitHub/Octokit-Extensions35.dll</HintPath>
+ </Reference>
+ <Reference Include="Octokit">
+ <HintPath>C:/Users/DHB/Desktop/UnityProjects/SE-II/Assets/Editor/GitHub/Octokit.dll</HintPath>
+ </Reference>
+ <Reference Include="Rackspace.Threading">
+ <HintPath>C:/Users/DHB/Desktop/UnityProjects/SE-II/Assets/Editor/GitHub/Rackspace.Threading.dll</HintPath>
+ </Reference>
+ <Reference Include="ReadOnlyCollectionsInterfaces">
+ <HintPath>C:/Users/DHB/Desktop/UnityProjects/SE-II/Assets/Editor/GitHub/ReadOnlyCollectionsInterfaces.dll</HintPath>
+ </Reference>
+ <Reference Include="sfw.net">
+ <HintPath>C:/Users/DHB/Desktop/UnityProjects/SE-II/Assets/Editor/GitHub/sfw.net.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.Http">
+ <HintPath>C:/Users/DHB/Desktop/UnityProjects/SE-II/Assets/Editor/GitHub/System.Net.Http.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading">
+ <HintPath>C:/Users/DHB/Desktop/UnityProjects/SE-II/Assets/Editor/GitHub/System.Threading.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
  </Reference>
@@ -150,45 +225,6 @@
  </Reference>
  <Reference Include="UnityEditor.WindowsStandalone.Extensions">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
- </Reference>
- <Reference Include="GitHub.Unity">
- <HintPath>C:/Users/DHB/Desktop/UnityProjects/SE-II/Assets/Editor/GitHub/GitHub.Unity.dll</HintPath>
- </Reference>
- <Reference Include="Octokit">
- <HintPath>C:/Users/DHB/Desktop/UnityProjects/SE-II/Assets/Editor/GitHub/Octokit.dll</HintPath>
- </Reference>
- <Reference Include="GitHub.Logging">
- <HintPath>C:/Users/DHB/Desktop/UnityProjects/SE-II/Assets/Editor/GitHub/GitHub.Logging.dll</HintPath>
- </Reference>
- <Reference Include="Rackspace.Threading">
- <HintPath>C:/Users/DHB/Desktop/UnityProjects/SE-II/Assets/Editor/GitHub/Rackspace.Threading.dll</HintPath>
- </Reference>
- <Reference Include="Mono.Security">
- <HintPath>C:/Users/DHB/Desktop/UnityProjects/SE-II/Assets/Editor/GitHub/Mono.Security.dll</HintPath>
- </Reference>
- <Reference Include="ReadOnlyCollectionsInterfaces">
- <HintPath>C:/Users/DHB/Desktop/UnityProjects/SE-II/Assets/Editor/GitHub/ReadOnlyCollectionsInterfaces.dll</HintPath>
- </Reference>
- <Reference Include="System.Threading">
- <HintPath>C:/Users/DHB/Desktop/UnityProjects/SE-II/Assets/Editor/GitHub/System.Threading.dll</HintPath>
- </Reference>
- <Reference Include="ICSharpCode.SharpZipLib">
- <HintPath>C:/Users/DHB/Desktop/UnityProjects/SE-II/Assets/Editor/GitHub/ICSharpCode.SharpZipLib.dll</HintPath>
- </Reference>
- <Reference Include="GitHub.Api">
- <HintPath>C:/Users/DHB/Desktop/UnityProjects/SE-II/Assets/Editor/GitHub/GitHub.Api.dll</HintPath>
- </Reference>
- <Reference Include="System.Net.Http">
- <HintPath>C:/Users/DHB/Desktop/UnityProjects/SE-II/Assets/Editor/GitHub/System.Net.Http.dll</HintPath>
- </Reference>
- <Reference Include="AsyncBridge.Net35">
- <HintPath>C:/Users/DHB/Desktop/UnityProjects/SE-II/Assets/Editor/GitHub/AsyncBridge.Net35.dll</HintPath>
- </Reference>
- <Reference Include="Octokit-Extensions35">
- <HintPath>C:/Users/DHB/Desktop/UnityProjects/SE-II/Assets/Editor/GitHub/Octokit-Extensions35.dll</HintPath>
- </Reference>
- <Reference Include="sfw.net">
- <HintPath>C:/Users/DHB/Desktop/UnityProjects/SE-II/Assets/Editor/GitHub/sfw.net.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>

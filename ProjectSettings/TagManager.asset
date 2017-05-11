@@ -10,6 +10,7 @@ TagManager:
   - dialogueBox
   - BattleMonster
   - InventorySlot
+  - BattleTrigger
   layers:
   - Default
   - TransparentFX

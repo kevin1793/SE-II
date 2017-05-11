@@ -1,1 +1,1 @@
-Gaurd: This way leads to the docks.
+Guard: This way leads to the docks.
