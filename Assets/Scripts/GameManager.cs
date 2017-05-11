@@ -143,7 +143,7 @@ public class GameManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (SceneManager.GetActiveScene ().name == "Prologue" || SceneManager.GetActiveScene ().name == "Prologue2" || SceneManager.GetActiveScene ().name == "Prologue3" || SceneManager.GetActiveScene ().name == "PreFinalBattle") {
+		if (SceneManager.GetActiveScene ().name == "Prologue" || SceneManager.GetActiveScene ().name == "Prologue2" || SceneManager.GetActiveScene ().name == "Prologue3" /*|| SceneManager.GetActiveScene ().name == "PreFinalBattle"*/) {
 			inPrologue = true;
 			allowMovement = false;
 		} else {
