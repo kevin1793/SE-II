@@ -1,0 +1,15 @@
+Librarian: Hi welcome to the Town Library.
+Hero: What do you know about the Dargon King Magmadroth?
+Librarian: Magmadroth is an invincible ancient Dragon King who unleashes his plague of dragons upon the world.
+Hero: So he's unkillable?
+Librarian: Not exactly, he is an entity who will always reincarnate.
+Librarian: He also can only be hurt by the legendary Dragon Slayer Sword.
+Hero: Where is the sword?
+Librarian: It is southwest of the town, however only the hero of legend can pull the sword from the stone.
+Hero: Ha I got this, my first name is Hero.
+Librarian: ...
+Hero: So...where do I find him?
+Librarian: He dwells in an island east of here.
+Hero: Looks like I'll have to find a boat.
+Librarian: There's a port east of here.
+Hero: Alright thanks for the info.

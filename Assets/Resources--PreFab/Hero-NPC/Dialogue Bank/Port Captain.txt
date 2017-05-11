@@ -1,3 +1,8 @@
 Captain: Like my ship?
-Captain: Yeah, who wouldn't.
-Captain: No you can't use it, yours is down there.
+Hero: Yeah it's awesome, can you take me to Far East Island with it?
+Captain: Nope, I don't give free rides.
+Hero: I'll pay you.
+Captain: Ha you wouldn't have enough money.
+Captain: I'm sure that old man over there would let you use his canoe.
+Hero: You're a jerk.
+Captain: Yeah a jerk with a giant ship.

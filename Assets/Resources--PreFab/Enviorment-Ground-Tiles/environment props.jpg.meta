@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 2f694f119abccd240828359779cbd9a9
-timeCreated: 1493800324
+timeCreated: 1494458641
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -27,6 +27,13 @@ TextureImporter:
     21300040: environment props_20
     21300042: environment props_21
     21300044: environment props_22
+    21300046: environment props_23
+    21300048: environment props_24
+    21300050: environment props_25
+    21300052: environment props_26
+    21300054: environment props_27
+    21300056: environment props_28
+    21300058: environment props_29
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -394,6 +401,97 @@ TextureImporter:
         y: 448
         width: 27
         height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: environment props_23
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 52
+        width: 62
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: environment props_24
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 53
+        width: 64
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: environment props_25
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 96
+        width: 73
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: environment props_26
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 320
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: environment props_27
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 415
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: environment props_28
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 415
+        width: 34
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: environment props_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 448
+        width: 62
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

@@ -1,0 +1,4 @@
+﻿Hero: "This inn seemed like it was a great part of Westchestnut"
+Hero: "Before the name was changed to Tresmuertes by the monsters"
+Hero: "Or is that what really happened.."
+Hero: "Hmmmm..."

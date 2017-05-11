@@ -40,24 +40,36 @@ public class GameManager : MonoBehaviour {
 	private Button useButton;
 	private Button dropButton;
 	private Button equipButton;
+	public GameObject dBox;
 	private Text currentItem;
 	private Text equippedWeapon;
-	public GameObject dBox;
+	private Toggle battleToggler;
+	public GameObject fnotify;
+
+	// other vars
+	private GameObject currentDialogue;
 	private Shop currShop;
+	private ObtainableItem currItem;
+	private GameObject swordsman;
 
 	// flags
 	public bool inBattle = false;
 	public bool allowMovement = true;
+	public bool allowBattle = false;
+	public bool battleToggleOverride = true;
 	public bool inConversation = false;
 	public bool swordsmanBattle = false;
 	public bool shopOnEnd = false;
 	public bool inShop = false;
 	public bool getItemOnEnd = false;
 	public bool dsSword = false;
-	private ObtainableItem currItem;
-	private GameObject swordsman;
+	public bool firstConvo = true;
 	public bool hasVisitedInn = false;
 	public bool NPCJoinOnEnd = false;
+	public bool inTutorial = false;
+	public bool inPrologue = false;
+	public bool finalBattleTriggered = false;
+	public bool finalBossDefeated = false;
 
 	// current scene (used to load back to the correct scene from battle scenes)
 	private Scene sourceScene;
@@ -85,6 +97,7 @@ public class GameManager : MonoBehaviour {
 		}
 
 		// set gui and dialogue
+		battleToggler = PersistentUI.instance.transform.Find("battleToggler").gameObject.GetComponent<Toggle>();
 		playerHP = PersistentUI.instance.transform.Find("playerHealth").gameObject.GetComponent<Text>();
 		playerHP.text = "Health: " + playerHealth + "/" + playerMaxHP;
 		equippedWeapon = PersistentUI.instance.transform.Find("playerWeapon").gameObject.GetComponent<Text>();
@@ -92,6 +105,7 @@ public class GameManager : MonoBehaviour {
 		enemyEncounter = PersistentUI.instance.transform.Find("enemyEncounter").gameObject.GetComponent<Button>();
 		inventoryObj = PersistentUI.instance.transform.Find ("playerInventory").gameObject;
 		itemSelect = PersistentUI.instance.transform.Find ("itemSelect").gameObject;
+		fnotify = PersistentUI.instance.transform.Find ("FNotify").gameObject;
 		currentItem = itemSelect.transform.Find ("selectedItem").gameObject.GetComponent<Text> ();
 		useButton = itemSelect.transform.Find ("itemInteract/useButton").gameObject.GetComponent<Button> ();
 		useButton.onClick.AddListener (useListener);
@@ -129,16 +143,35 @@ public class GameManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (SceneManager.GetActiveScene ().name == "Prologue") {
+		if (SceneManager.GetActiveScene ().name == "Prologue" || SceneManager.GetActiveScene ().name == "Prologue2" || SceneManager.GetActiveScene ().name == "Prologue3" || SceneManager.GetActiveScene ().name == "PreFinalBattle") {
+			inPrologue = true;
 			allowMovement = false;
+		} else {
+			inPrologue = false;
 		}
 		if (SceneManager.GetActiveScene ().name == "Tutorial scene") {
-			allowMovement = true;
+			inTutorial = true;
+			if (firstConvo) {
+				allowMovement = true;
+			} else {
+				allowMovement = false;
+			}
+		} else {
+			inTutorial = false;
+		}
+
+		if (inPrologue || inTutorial || inBattle || SceneManager.GetActiveScene ().name == "Exodus" || SceneManager.GetActiveScene ().name == "Cave 2" || SceneManager.GetActiveScene ().name == "First Town (Kevin)" || SceneManager.GetActiveScene ().name == "Port" || SceneManager.GetActiveScene ().name == "Inn" || SceneManager.GetActiveScene ().name == "Potion Shop" || SceneManager.GetActiveScene ().name == "Path" || SceneManager.GetActiveScene ().name == "Tutorial scene" || SceneManager.GetActiveScene ().name == "RichHouse(Amar)" || SceneManager.GetActiveScene ().name == "PoorHouse(Amar)" || SceneManager.GetActiveScene ().name == "Library(Amar)") {
+			allowBattle = false;
+			battleToggler.gameObject.SetActive (false);
+		} else {
+			allowBattle = true;
+			battleToggler.gameObject.SetActive (true);
 		}
 
 		if (oneTimeEvents) {
 			inventoryObj.SetActive (false);
 			itemSelect.SetActive (false);
+			fnotify.SetActive (false);
 			oneTimeEvents = false;
 		}
 
@@ -208,19 +241,28 @@ public class GameManager : MonoBehaviour {
 		currentPos = GameObject.Find ("Hero").transform.position;
 
 		// move to battle scene
-		if (sourceName == "Island" || sourceName == "Island 2")
+		if (sourceName == "Island" || sourceName == "Island 2") {
 			SceneManager.LoadScene ("Battle Scene Island");
-		else if (sourceName == "Cave" || sourceName == "Cave1") {
+		} else if (sourceName == "Cave" || sourceName == "Cave1") {
 			SceneManager.LoadScene ("Battle Scene Cave");
 		} else if (sourceName == "Cave 2") {
 			SceneManager.LoadScene ("Final Battle Scene");
 		}
-		else
+		else if (sourceName == "Tresmuertes") {
+			SceneManager.LoadScene ("Deserted Battle Scene");
+		}else {
 			SceneManager.LoadScene ("Battle Scene");
+		}
+
+		battleToggler.gameObject.SetActive (false);
 	}
 
 	// function to enter a conversation
 	public void enterConversation(GameObject t) {
+		if (inTutorial) {
+			currentDialogue = t;
+			firstConvo = false;
+		}
 		dBox.gameObject.SetActive (true);
 		inConversation = true;
 		dialogueManager.setDialogue (t.GetComponent<DialogueText> ().dialogue);
@@ -264,6 +306,9 @@ public class GameManager : MonoBehaviour {
 		// reactivate health ui
 		playerHP.gameObject.SetActive(true);
 
+		// reactive other ui
+		battleToggler.gameObject.SetActive (true);
+
 		// flag gamemanager to update player pos
 		playerNeedsUpdate = true;
 
@@ -296,6 +341,7 @@ public class GameManager : MonoBehaviour {
 	public void flagPosUpdate(Vector3 tPos) {
 		currentPos = tPos;
 		playerNeedsUpdate = true;
+		allowMovement = true;
 	}
 
 	// add item i to player inventory
@@ -446,5 +492,15 @@ public class GameManager : MonoBehaviour {
 	public void addSwordsman() {
 		swordsmanBattle = true;
 		swordsman.SetActive (false);
+	}
+
+	public void battleToggleListener(bool b) {
+		GameManager.instance.battleToggleOverride = b;
+	}
+
+	public void disableDialogue() {
+		Destroy (currentDialogue.gameObject);
+		allowMovement = true;
+		firstConvo = true;
 	}
 }

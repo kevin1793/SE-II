@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: edc1bfd1b48a64443b74bd287b0d5ca7
-timeCreated: 1493796539
+timeCreated: 1494490775
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -17,6 +17,8 @@ TextureImporter:
     21300020: farmnature_tileset_10
     21300022: farmnature_tileset_11
     21300024: farmnature_tileset_12
+    21300026: farmnature_tileset_13
+    21300028: farmnature_tileset_14
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -254,6 +256,32 @@ TextureImporter:
         y: 353
         width: 34
         height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: farmnature_tileset_13
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 257
+        width: 78
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: farmnature_tileset_14
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 387
+        width: 110
+        height: 113
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
